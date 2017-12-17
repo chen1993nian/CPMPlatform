@@ -1,0 +1,214 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-weight:normal;
+    font-style:normal;
+    font-family:Tahoma,Helvetica,Arial,sans-serif;
+    font-size:12px;
+    background-color:#f6f7f9;
+    height:100%;
+
+}
+html
+{
+    height:100%;
+}
+
+.defaultstyle
+{
+	border-collapse:collapse; /* 关键属性：合并表格内外边框(其实表格边框有2px，外面1px，里面还有1px哦) */
+	border:1px solid #bfd1e2; /* 设置边框属性；样式(solid=实线)、颜色(#999=灰) */
+}
+td{
+	padding:3px;
+	border:1px solid #bfd1e2;
+}
+
+.TextBoxInChar{
+    width:98%;
+    height:18px;
+}
+.TextBoxInOutPage{
+    width:98%;
+    height:18px;
+}
+.TextBoxInArea{
+    width:100%;
+}
+.TextBoxInDate
+{
+	margin:1px;
+    width:80%;
+    height:18px;
+}
+.TextBoxInChar, .TextBoxInDate, .TextBoxInArea,.TextBoxInOutPage
+{
+    border:#c0bbb4 1px solid;
+    background:url(../img/common/bg_input_text.png) white repeat-x left top;/**/
+    padding-top:2px;
+    padding-left:2px;
+    padding-bottom:1px;
+    font-size:10pt;
+    float:left;
+}
+
+.Read
+{
+    color:Gray;
+}
+.hidden
+{
+    display:none;
+}
+.menubar
+{
+    
+    line-height:34px;
+    height:33px;
+    overflow:hidden;
+    z-index:100;
+}
+.topnav{
+    width: 100%; 
+    display: block; 
+    z-index: 100; 
+    overflow: visible; 
+    position: fixed; 
+    top: 0px; 
+    background-image: url(../img/toolbar_bg.gif);  
+    height: 31px; 
+    border-bottom:#cadcea 1px solid;
+}
+a.linkbtn{
+	line-height:20px;
+	padding:0px;
+}
+.menubar ul{
+	float: right; 
+    list-style-type:none;
+} 
+.menubar ul li
+{
+    padding:0px 10px 0px 8px;
+    float:left;
+    margin-right:-2px;
+    background:url(../img/edge1.gif) no-repeat 100% 50%
+}
+
+label.error
+{
+    font-weight:600;
+    color:red;
+    margin-left: 10px;
+    width: auto;
+    display: inline;
+}
+.RequiredStar
+{    
+	color:red;
+	font-weight:bold;
+    width:12px;
+    text-align:center;
+    vertical-align:middle;
+    width:10px;
+    height:100%;
+}
+.RequiredTbl td
+{
+	text-indent:0px;
+	padding:0px;
+}
+.OutPageTbl td
+{
+	text-indent:0px;
+	padding:0px;
+}
+
+input[type='button']
+{
+	font-size:9pt;
+	height:22px;
+}
+.ErrorMsg{
+	background:	#ffff99;
+	padding:6px;
+	margin:20px;
+	border:double 3px  orangered;
+}
+.ErrorMsg ol
+{
+	margin-left:30px;
+}
+.wfheader
+{
+	padding:2px 0px 2px 50px;
+	}
+.wfpage
+{
+	text-align:center;
+	padding:10px;
+	background:white;
+	border-top:2px solid gray;
+	overflow:auto;
+	height:100%;
+	
+}
+.wfdealinfo
+{
+	padding:10px;
+	width:700px;
+	}
+.wfdealinfo th
+{
+	color:black;
+	height:25px;
+	font:bold 10pt/26px 黑体;
+	background:#eee;
+}
+.TaskName
+{
+	color:Blue;
+	}
+#maindiv
+{
+	height:100%;
+}
+a{
+    text-decoration:none;
+  }
+  a:hover{
+    color:red;
+  }
+  
+  .TableTop{
+    border:0px;
+    font-size:12px;
+    border-collapse:collapse;
+    border-width:0px;
+    }
+.TableTop>tbody>tr>td{
+    background:url(../img/toolbar/table_top_bg.png) no-repeat 0px -32px;
+    height:32px;
+    color:#fff;
+    padding:0px;
+    font-weight:bold;
+    border-width:0px;
+    }
+.TableTop>tbody>tr> td.left{
+    width:5px !important;
+    background-position:left 0px;
+    }
+.TableTop>tbody>tr> td.right{
+    width:5px !important;
+    background-position:right -64px;
+    }
+.TableTop>tbody>tr> td.center{
+    text-align:center;
+    background-repeat:repeat-x;
+    background-position:0px -32px;
+    }
+ .tip{width:780px;margin-left:auto;margin-right:auto;border:dotted 1px orange;margin-bottom:5px;
+      background:#F9FB91;text-align:left;padding:5px;margin-top:10px;}
+ .tip li{margin-left:20px;}

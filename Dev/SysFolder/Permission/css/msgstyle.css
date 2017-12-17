@@ -1,0 +1,53 @@
+#msg_div_all {width:100%;height:100%;position:absolute;filter:Alpha(opacity=50);background:#CCC;}
+#msg_div_main {position:absolute;}
+span,h2,table,tr,td
+{margin:0;padding:0;font-family:verdana,Arial, Helvetica, sans-serif;list-style-type:none;font-size:inherit;color:inherit;z-index:inherit}
+table{border:0;border-collapse:collapse}
+.syBtn{width:69px;height:24px;color:#333;background-position:-1198px -13px;cursor:hand!important;cursor:pointer;background-color:transparent;border:0;padding-top:2px}
+.syBtn{padding:0}
+.fLe,.fLeft{float:left}
+.fRi,.fRig{float:right}
+.sysWin{width:424px;z-index:100000!important}
+.sysWin h2{height:28px;background-position:0 -649px}
+.sysWin h2 .fLe{width:5px;height:28px;background-position:-1069px -5px}
+.sysWin h2 .fRi{width:5px;height:28px;background-position:-1089px -5px}
+.sysWin .icoSw{display:block;width:14px;height:14px;margin:6px 6px 0 2px;background-position:-1147px -39px;float:left}
+.sysWin .icoSwAdb{background-position:-200px -6px}
+.sysWin h2 span{float:left;padding-top:8px;font-weight:normal;cursor:default}
+a.clsWin{width:14px;height:14px;display:block;float:right;background-position:-1181px -38px;margin:6px 4px 0 0}
+a.clsWin:hover{background-position:-1199px -38px}
+.sysWin div.bdy{background-position:-747px 0;background-repeat:repeat-y;background-color:#FFF}
+.sysWin div.bdyCtn{padding:20px;margin:0 3px;color:#333}
+.swTb{line-height:160%}
+.swTb tr{vertical-align:middle}
+.swTb th{width:70px}
+*:lang(zh) .swTb th{width:55px}
+.icoIfo{width:37px;height:37px;background-position:-324px -42px;display:block}
+.swTit{cursor:default}
+.swTit p,.swTit span{cursor:default}
+.sysWin div.bot{height:45px;background-position:0 -705px;position:relative;border:0}
+.sysWin .bot .fLe{width:5px;height:45px;background-position:-1070px -48px;position:absolute;left:0;top:0}
+.sysWin .bot .fRi{width:5px;height:45px;background-position:-1089px -48px;position:absolute;right:0;top:0}
+.sysWin .bot .syBtn{float:right;margin:5px 10px 0 5px}
+.sysWin .msg1{height:120px;text-align:center;line-height:120px}
+.msg1Tb{height:120px;text-align:center;width:99%;line-height:180%}
+.msg1Tb tr{vertical-align:middle}
+.msg1Tb td{padding-top:10px;padding-bottom:15px}	.sysWin .bot{text-align:center;padding:4px;border-top:1px solid #E5E5E5}
+.sysWin .btnFnt{width:80px}
+.swEroMsg{font-size:12px;margin-left:110px;color:#990000}
+h2{font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif,\"ËÎÌו\"}
+.sysWin h2 span{color:#2C71AF}
+.swTit{color:#06559B}
+.f12{ font-size:12px}
+.f14,.gNav li a,.swTit
+{font-size:14px}
+.sysWin div.bdyCtn{background-color:#FBFEFF}
+.sysWin h2 .fLe,.sysWin h2 .fRi,.sysWin .bdy,.sysWin .bot .fLe,.sysWin .bot .fRi,.syBtn,
+{ background-image:url(../../../images/163msgalert/f1.gif); background-repeat:no-repeat}
+body.gb{ background-repeat:repeat-y}
+.icoIfo
+{ background-image:url(../../../images/163msgalert/f1png.png); background-repeat:no-repeat}
+.sysWin h2,.sysWin .bot
+{ background-image:url(../../../images/163msgalert/f2.gif); background-repeat:repeat-x}
+.icoSw,a.clsWin
+{ background-image:url(../../../images/163msgalert/ico.gif); background-repeat:no-repeat}

@@ -1,0 +1,30 @@
+[17:42:34]|Error|发生错误 ExecuteTable:select isnull(_wfstate,'') state , _AutoId from T_E_File_Config where _autoid='e8bf2677-78e6-4fc1-bbfa-4de16c5c83b3',列名 '_wfstate' 无效。 
+[17:42:43]|Error|System.Data.SqlClient.SqlException (0x80131904): 列名 '_wfstate' 无效。
+   在 EIS.DataAccess.SysDatabase.ExecuteTable(String command)
+   在 EIS.WebBase.SysFolder.AppFrame.AppInput.Page_Load(Object sender, EventArgs e) 位置 e:\CEIM开源协同办公系统20171209\StudioJZY\SysFolder\AppFrame\AppInput.aspx.cs:行号 1023
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:61245647-8844-4081-bab1-723c1dd3235f
+Error Number:207,State:1,Class:16 
+[17:43:23]|Error|发生错误 ExecuteTable:select isnull(_wfstate,'') state , _AutoId from T_E_File_Config where _autoid='e8bf2677-78e6-4fc1-bbfa-4de16c5c83b3',列名 '_wfstate' 无效。 
+[17:43:29]|Error|System.Data.SqlClient.SqlException (0x80131904): 列名 '_wfstate' 无效。
+   在 EIS.DataAccess.SysDatabase.ExecuteTable(String command)
+   在 EIS.WebBase.SysFolder.AppFrame.AppInput.Page_Load(Object sender, EventArgs e) 位置 e:\CEIM开源协同办公系统20171209\StudioJZY\SysFolder\AppFrame\AppInput.aspx.cs:行号 1023
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:61245647-8844-4081-bab1-723c1dd3235f
+Error Number:207,State:1,Class:16 
+[20:09:56]|Error|System.ArgumentException: 列“SignType ”不属于表 Table。
+   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 EIS.AppModel.ModelBuilder.GenDefaultValue(String tblname, DataRow data, List`1 dtfields)
+   在 EIS.AppModel.ModelBuilder.GetTblHtml(String tblName, String strWhere, StringBuilder sbModel, XmlDocument xmlDoc) 
+[20:09:56]|Error|System.ArgumentException: 列“SignType ”不属于表 Table。
+   在 EIS.AppModel.ModelBuilder.GetTblHtml(String tblName, String strWhere, StringBuilder sbModel, XmlDocument xmlDoc)
+   在 EIS.WebBase.SysFolder.AppFrame.AppInput.getTblHtml() 位置 e:\CEIM开源协同办公系统20171209\StudioJZY\SysFolder\AppFrame\AppInput.aspx.cs:行号 811 

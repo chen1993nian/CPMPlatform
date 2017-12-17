@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<queryobjs>
+	<queryobj queryid="flowmypart">
+		<!-- 我参与的流程 -->
+		<querysql sortdir="DealTime desc" distinct="instanceId">
+			<![CDATA[select * from (select i._AutoId instanceId ,i.instanceName,i.deptName,i.DeptId,i.CompanyName,i.instanceState,i.EmployeeName,i._CreateTime,u.dealtime
+            ,i.AppName,d.WorkflowCode,i.FinishTime,dbo.WF_GetActiveNodeName(i._AutoId) ActiveNode,dbo.WF_GetActiveNodeEmployee(i._AutoID) ActiveEmployee
+    from T_E_WF_Instance i inner join T_E_WF_UserTask u  on u.InstanceId=i._AutoID inner join t_e_wf_define d on i.workflowid=d._autoId
+    where u.TaskState='2' and (u.ownerId='@employeeId' or u.dealUser ='@employeeId' )) t 
+    where |^condition^| |^sortdir^|]]>
+		</querysql>
+		<querylist>
+			<row id="[instanceId]">
+				<EmployeeName>{EmployeeName}</EmployeeName>
+				<_CreateTime>{_createtime:yyyy-MM-dd HH:mm}</_CreateTime>
+                <DeptName>{deptName}</DeptName>
+                <DeptId>{DeptId}</DeptId>
+				<CompanyName>{CompanyName}</CompanyName>
+				<InstanceId>{instanceId}</InstanceId>
+				<InstanceName>{instanceName}</InstanceName>
+				<WorkflowName>{WorkflowName}</WorkflowName>
+				<FinishTime>{FinishTime:yyyy-MM-dd HH:mm}</FinishTime>
+				<DealTime>{DealTime:yyyy-MM-dd HH:mm}</DealTime>
+				<InstanceState>{instancestate}</InstanceState>
+				<ActiveNode>{ActiveNode}</ActiveNode>
+				<ActiveEmployee>{ActiveEmployee}</ActiveEmployee>
+                <AppName>{AppName}</AppName>
+                <WorkflowCode>{WorkflowCode}</WorkflowCode>
+			</row>
+		</querylist>
+	</queryobj>
+ </queryobjs>

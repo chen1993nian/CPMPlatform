@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<queryobjs>
+
+    <queryobj queryid="tableinfo">
+        <!-- 业务查询 -->
+        <querysql sortdir="_CreateTime">
+            <![CDATA[select _autoid as tableid, tablename,tablenamecn,parentname,tablecat,pagereccount,tabletype,_CreateTime,_UpdateTime,
+              (select count(*) from T_E_Sys_TableInfo t where t.ParentName=info.TableName) as sonnum
+              from T_E_Sys_TableInfo info where  |^condition^| |^sortdir^|]]>
+        </querysql>
+        <querylist>
+            <row id="[tablename]">
+                <tableid>{tableid}</tableid>
+                <tablename>{tablename}</tablename>
+                <tablenamecn>{tablenamecn}</tablenamecn>
+                <parentname>{parentname}</parentname>
+                <tablecat>{tablecat}</tablecat>
+                <pagereccount>{pagereccount}</pagereccount>
+                <tabletype>{tabletype}</tabletype>
+                <sonnum>{sonnum}</sonnum>
+                <_CreateTime>{_CreateTime:yyyy-MM-dd HH:mm}</_CreateTime>
+                <_UpdateTime>{_UpdateTime:yyyy-MM-dd HH:mm}</_UpdateTime>
+            </row>
+        </querylist>
+    </queryobj>
+
+    <queryobj queryid="treeinfo">
+        <!-- 树型查询 -->
+        <querysql sortdir="treename">
+            <![CDATA[select _autoid as treeid, treename,Connection,CatCode,_CreateTime
+            from T_E_Sys_Tree where  |^condition^| |^sortdir^|]]>
+        </querysql>
+        <querylist>
+            <row id="[treeid]">
+                <treeid>{treeid}</treeid>
+                <treename>{treename}</treename>
+                <Connection>{Connection}</Connection>
+                <CatCode>{CatCode}</CatCode>
+                <createdate>{_CreateTime:yyyy-MM-dd HH:mm}</createdate>
+            </row>
+        </querylist>
+    </queryobj>
+
+    <queryobj queryid="tablestylelist">
+        <!-- 业务样式查询 -->
+        <querysql sortdir="StyleIndex">
+            <![CDATA[
+		    select '' _autoid,tablename,0 StyleIndex,'默认样式' StyleName,'' Memo,_CreateTime,_UpdateTime from T_E_Sys_TableInfo where tablename='@tablename'
+		    union
+		    select _autoid,tablename,StyleIndex,StyleName,Memo,_CreateTime,_UpdateTime from T_E_Sys_TableStyle where  |^condition^| |^sortdir^|
+			]]>
+        </querysql>
+        <querylist>
+            <row id="[_autoid]">
+                <tablename>{tablename}</tablename>
+                <styleindex>{StyleIndex}</styleindex>
+                <stylename>{StyleName}</stylename>
+                <createdate>{_CreateTime:yyyy-MM-dd HH:mm}</createdate>
+                <updatetime>{_UpdateTime:yyyy-MM-dd HH:mm}</updatetime>
+                <memo>{memo}</memo>
+            </row>
+        </querylist>
+    </queryobj>
+
+    <queryobj queryid="flowtodo">
+        <!-- 流程待办 -->
+        <querysql sortdir="arrivetime desc">
+            <![CDATA[select * from (select i.employeeName as CreateUser,i._createtime,i.deptName,i.instanceName,i._autoid as instanceId,i.AppName,i.AppId
+            ,t._AutoId as taskId,t.TaskName,t.ArriveTime,u.OwnerId,u.isshare,u.taskState,d.workflowname,i.companyname,u._autoId as uTaskId,e.employeeName agentName,isnull(u.agentId,'') agentId
+            ,u.DeptName+'（'+u.PositionName+'）' as PositionName
+             from t_e_wf_instance i inner join t_e_wf_task t on i._AutoId=t.instanceId
+            inner join t_e_wf_usertask u on t._AutoId=u.taskid
+            inner join t_e_wf_define d on d._autoid=i.workflowid
+            left join t_e_org_employee e on isnull(u.agentId,'')=e._autoId where u._IsDel=0
+            ) t
+            where (TaskState = '0' or TaskState = '1') and (ownerId='@employeeId' or agentId='@employeeId') and |^condition^| |^sortdir^|
+            ]]>
+        </querysql>
+        <querylist>
+            <row id="[taskId]">
+                <createuser>{CreateUser}</createuser>
+                <createtime>{_createtime:yyyy-MM-dd HH:mm}</createtime>
+                <deptname>{deptName}</deptname>
+                <PositionName>{PositionName}</PositionName>
+                <companyname>{companyname}</companyname>
+                <instancename>{instancename}</instancename>
+                <workflowname>{workflowname}</workflowname>
+                <instanceid>{instanceId}</instanceid>
+                <taskname>{taskname}</taskname>
+                <arrivetime>{arrivetime:yyyy-MM-dd HH:mm}</arrivetime>
+                <isshare>{isshare}</isshare>
+                <taskstate>{taskstate}</taskstate>
+                <taskid>{taskid}</taskid>
+                <utaskid>{utaskid}</utaskid>
+                <agentName>{agentName}</agentName>
+
+            </row>
+        </querylist>
+    </queryobj>
+
+    <queryobj queryid="flowmypart">
+        <!-- 我参与的流程 -->
+        <querysql sortdir="_createtime desc">
+            <![CDATA[select * from (select _AutoId instanceId ,instanceName,deptName,CompanyName,instanceState,EmployeeName,_CreateTime
+              ,FinishTime,dbo.WF_GetActiveNodeName(_AutoId) ActiveNode,dbo.WF_GetActiveNodeEmployee(_AutoID) ActiveEmployee
+             from t_e_wf_instance where _AutoId in 
+            (select instanceId from t_e_wf_usertask u where u.TaskState='2' and (u.ownerId='@employeeId' or u.dealUser ='@employeeId' ))) t where |^condition^| |^sortdir^|
+            ]]>
+        </querysql>
+        <querylist>
+            <row id="[instanceId]">
+                <createuser>{EmployeeName}</createuser>
+                <createtime>{_createtime:yyyy-MM-dd HH:mm}</createtime>
+                <deptname>{deptName}</deptname>
+                <instancename>{instancename}</instancename>
+                <instanceid>{instanceId}</instanceid>
+                <instanceName>{instanceName}</instanceName>
+                <finishtime>{FinishTime:yyyy-MM-dd HH:mm}</finishtime>
+                <instancestate>{instancestate}</instancestate>
+                <ActiveNode>{ActiveNode}</ActiveNode>
+                <ActiveEmployee>{ActiveEmployee}</ActiveEmployee>
+            </row>
+        </querylist>
+    </queryobj>
+
+    <queryobj queryid="flowmystart">
+        <!-- 我参与的流程 -->
+        <querysql sortdir="_createtime desc">
+            <![CDATA[select * from (select i._AutoId instanceId ,i.instanceName,i.deptName,i.CompanyName,i.instanceState,i.EmployeeName,i._CreateTime
+            ,i.FinishTime,d.WorkflowName from t_e_wf_instance i inner join t_e_wf_define d on i.workflowid=d._autoId) t where |^condition^| |^sortdir^|]]>
+        </querysql>
+        <querylist>
+            <row id="[instanceId]">
+                <createuser>{EmployeeName}</createuser>
+                <createtime>{_createtime:yyyy-MM-dd HH:mm}</createtime>
+                <deptname>{deptName}</deptname>
+                <instancename>{instancename}</instancename>
+                <CompanyName>{CompanyName}</CompanyName>
+                <WorkflowName>{WorkflowName}</WorkflowName>
+                <instanceid>{instanceId}</instanceid>
+                <instanceName>{instanceName}</instanceName>
+                <finishtime>{FinishTime:yyyy-MM-dd HH:mm}</finishtime>
+                <instancestate>{instancestate}</instancestate>
+                <instanceid>{instanceId}</instanceid>
+
+            </row>
+        </querylist>
+    </queryobj>
+
+    <queryobj queryid="flow_admin_ondeal">
+        <!-- 管理员-处理中的流程 -->
+        <querysql sortdir="_createtime desc">
+            <![CDATA[select * from (select i._AutoId instanceId ,i.instanceName,i.deptName,i.CompanyName,instanceState,i.EmployeeName,i._CreateTime
+            ,i.FinishTime,dbo.WF_GetActiveNodeName(i._AutoId) ActiveNode,dbo.WF_GetActiveNodeEmployee(i._AutoID) ActiveEmployee,d.workflowName,DATEDIFF(d,i._createTime,getdate()) Days
+             from t_e_wf_instance i inner join t_e_wf_define d on i.workflowId=d._autoid) t  where InstanceState='处理中' and |^condition^| |^sortdir^|
+             ]]>
+        </querysql>
+        <querylist>
+            <row id="[instanceId]">
+                <EmployeeName>{EmployeeName}</EmployeeName>
+                <_CreateTime>{_createtime:yyyy-MM-dd HH:mm}</_CreateTime>
+                <deptname>{deptName}</deptname>
+                <workflowname>{workflowName}</workflowname>
+                <companyname>{CompanyName}</companyname>
+                <instancename>{instancename}</instancename>
+                <Days>{Days}</Days>
+                <instanceid>{instanceId}</instanceid>
+                <instanceName>{instanceName}</instanceName>
+                <finishtime>{FinishTime:yyyy-MM-dd HH:mm}</finishtime>
+                <instancestate>{instancestate}</instancestate>
+                <ActiveNode>{ActiveNode}</ActiveNode>
+                <ActiveEmployee>{ActiveEmployee}</ActiveEmployee>
+            </row>
+        </querylist>
+    </queryobj>
+
+    <queryobj queryid="flow_admin_finish">
+        <!-- 管理员-历史流程查询 -->
+        <querysql sortdir="_createtime desc">
+            <![CDATA[select * from (select i._AutoId instanceId ,instanceName,deptName,CompanyName,instanceState,EmployeeName,i._CreateTime,d.workflowName,DATEDIFF(d,i._createTime,i.FinishTime) Days
+            ,i.FinishTime from t_e_wf_instance i inner join t_e_wf_define d on i.workflowId=d._autoid ) t where (instanceState='归档' or instanceState='完成' or instanceState='终止' ) and |^condition^| |^sortdir^|
+            ]]>
+        </querysql>
+        <querylist>
+            <row id="[instanceId]">
+                <createuser>{EmployeeName}</createuser>
+                <createtime>{_createtime:yyyy-MM-dd HH:mm}</createtime>
+                <deptname>{deptName}</deptname>
+                <CompanyName>{CompanyName}</CompanyName>
+                <instancename>{instancename}</instancename>
+                <instanceid>{instanceId}</instanceid>
+                <instanceName>{instanceName}</instanceName>
+                <workflowName>{workflowName}</workflowName>
+                <finishtime>{FinishTime:yyyy-MM-dd HH:mm}</finishtime>
+                <instancestate>{instancestate}</instancestate>
+                <Days>{Days}</Days>
+            </row>
+        </querylist>
+    </queryobj>
+
+    <queryobj queryid="flow_admin_overtime">
+        <!-- 管理员-处理中的流程 -->
+        <querysql sortdir="_createtime desc">
+            <![CDATA[select * from (
+            select i._AutoId instanceId ,instanceName,i.deptName,CompanyName,instanceState,i.EmployeeName,i._CreateTime,d.workflowName
+            ,FinishTime,t.TaskName,t._AutoID taskId,t.Deadline,t.ArriveTime,t.OverTimeAlertFirst, u.EmployeeName as dealuser
+            from t_e_wf_instance i inner join T_E_WF_Task t on i._AutoID=t.InstanceId
+            inner join T_E_WF_UserTask u on t._AutoID = u.TaskId
+	        inner join T_E_WF_Define d on  i.workflowId=d._autoId
+            where InstanceState='处理中' and (t.TaskState='0' or t.TaskState='1' ) and u.DealTime>GETDATE()
+            ) t  where |^condition^| |^sortdir^|
+            ]]>
+        </querysql>
+        <querylist>
+            <row id="[instanceId]">
+                <createuser>{EmployeeName}</createuser>
+                <createtime>{_createtime:yyyy-MM-dd HH:mm}</createtime>
+                <deptname>{deptName}</deptname>
+                <CompanyName>{CompanyName}</CompanyName>
+                <instancename>{instancename}</instancename>
+                <instanceid>{instanceId}</instanceid>
+                <instanceName>{instanceName}</instanceName>
+                <workflowName>{workflowName}</workflowName>
+                <finishtime>{FinishTime:yyyy-MM-dd HH:mm}</finishtime>
+                <instancestate>{instancestate}</instancestate>
+                <TaskName>{TaskName}</TaskName>
+                <Deadline>{Deadline}</Deadline>
+                <ArriveTime>{ArriveTime}</ArriveTime>
+                <OverTimeAlertFirst>{OverTimeAlertFirst}</OverTimeAlertFirst>
+                <dealuser>{dealuser}</dealuser>
+
+            </row>
+        </querylist>
+    </queryobj>
+
+    <queryobj queryid="flow_company_watch">
+        <!-- 公司级管理员-流程监控 -->
+        <querysql sortdir="_createtime desc">
+            <![CDATA[select _AutoId instanceId ,instanceName,deptName,CompanyName,instanceState,EmployeeName,_CreateTime
+            ,FinishTime,dbo.WF_GetActiveNodeName(_AutoId) ActiveNode,dbo.WF_GetActiveNodeEmployee(_AutoID) ActiveEmployee
+             from t_e_wf_instance  where  |^condition^| |^sortdir^|
+             ]]>
+        </querysql>
+        <querylist>
+            <row id="[instanceId]">
+                <createuser>{EmployeeName}</createuser>
+                <createtime>{_createtime:yyyy-MM-dd HH:mm}</createtime>
+                <deptname>{deptName}</deptname>
+                <instancename>{instancename}</instancename>
+                <instanceid>{instanceId}</instanceid>
+                <instanceName>{instanceName}</instanceName>
+                <finishtime>{FinishTime:yyyy-MM-dd HH:mm}</finishtime>
+                <instancestate>{instancestate}</instancestate>
+                <ActiveNode>{ActiveNode}</ActiveNode>
+                <ActiveEmployee>{ActiveEmployee}</ActiveEmployee>
+
+
+            </row>
+        </querylist>
+    </queryobj>
+
+    <queryobj queryid="dictinfo">
+        <!-- 字典列表 -->
+        <querysql sortdir="dictname desc">
+            <![CDATA[select d.*,(select count(*) from T_E_Sys_DictEntry e where e.dictid=d._AutoID) as itemsnum from T_E_Sys_Dict d where  |^condition^| |^sortdir^|]]>
+        </querysql>
+        <querylist>
+            <row id="[_AutoID]">
+                <dictcode>{dictcode}</dictcode>
+                <dictname>{dictname}</dictname>
+                <dictid>{_AutoID}</dictid>
+                <itemsnum>{itemsnum}</itemsnum>
+        </row>
+        </querylist>
+    </queryobj>
+
+    <queryobj queryid="appdict">
+        <!-- 字典列表 -->
+        <querysql sortdir="dictname desc">
+            <![CDATA[select * from AppDict where  |^condition^| |^sortdir^|]]>
+        </querysql>
+        <querylist>
+            <row id="[autoid]">
+                <dictname>{dictname}</dictname>
+                <disptext>{disptext}</disptext>
+                <dbvalue>{dbvalue}</dbvalue>
+            </row>
+        </querylist>
+    </queryobj>
+
+    <queryobj queryid="mail_pop3">
+        <!-- POP3信息 -->
+        <querysql sortdir="autoid">
+            <![CDATA[select * from T_E_Mail_POP3 where  |^condition^| |^sortdir^|]]>
+        </querysql>
+        <querylist>
+            <row id="[autoid]">
+                <autoid>{autoid}</autoid>
+                <emailadrr>{emailadrr}</emailadrr>
+                <pop3adrr>{pop3adrr}</pop3adrr>
+                <pop3port>{pop3port}</pop3port>
+                <pop3ssl>{pop3ssl}</pop3ssl>
+                <smtpadrr>{smtpadrr}</smtpadrr>
+                <smtpport>{smtpport}</smtpport>
+                <smtpssl>{smtpssl}</smtpssl>
+                <account>{account}</account>
+                <passwd>{passwd}</passwd>
+                <credentialrequired>{credentialrequired}</credentialrequired>
+                <autoreceive>{autoreceive}</autoreceive>
+                <maxsize>{maxsize}</maxsize>
+                <isdefault>{isdefault}</isdefault>
+                <delafterrec>{delafterrec}</delafterrec>
+                <owner>{owner}</owner>
+            </row>
+        </querylist>
+    </queryobj>
+
+    <queryobj queryid="mail_folder">
+        <!-- 邮件文件夹信息 -->
+        <querysql sortdir="foldername">
+            <![CDATA[select * from T_E_Mail_Folder where  |^condition^| |^sortdir^|]]>
+        </querysql>
+        <querylist>
+            <row id="[folderid]">
+                <folderid>{folderid}</folderid>
+                <foldername>{foldername}</foldername>
+                <owner>{owner}</owner>
+                <sn>{sn}</sn>
+            </row>
+        </querylist>
+    </queryobj>
+
+    <queryobj queryid="phytableinfo">
+        <!-- 邮件文件夹信息 -->
+        <querysql sortdir="Name">
+            <![CDATA[select [Name] TableName from sysobjects  where  xtype='u' and [Name] not in
+				(select TableName from T_E_Sys_TableInfo) and  |^condition^| |^sortdir^|]]>
+        </querysql>
+        <querylist>
+            <row id="[TableName]">
+                <TableName>{TableName}</TableName>
+            </row>
+        </querylist>
+    </queryobj>
+
+    <queryobj queryid="employee_query">
+        <!-- 字典列表 -->
+        <querysql sortdir="EmployeeName">
+            <![CDATA[select * from (
+              select de.EmployeeId, em.EmployeeCode,em.EmployeeName,em.Officephone,em.Cellphone,em.Sex,em.EMail, dm.DeptName CompanyName, de.DeptName ,de.PositionName
+              from T_E_Org_DeptEmployee de inner join T_E_Org_Employee em on de.EmployeeID=em._AutoID
+              inner join T_E_Org_Department dm on de.CompanyId= dm._AutoID
+              where de.DeptEmployeeType=0 and de._IsDel=0
+              ) t where  |^condition^| |^sortdir^|
+            ]]>
+        </querysql>
+        <querylist>
+            <row id="[EmployeeId]">
+                <EmployeeId>{EmployeeId}</EmployeeId>
+                <EmployeeCode>{EmployeeCode}</EmployeeCode>
+                <EmployeeName>{EmployeeName}</EmployeeName>
+                <Officephone>{Officephone}</Officephone>
+                <Cellphone>{Cellphone}</Cellphone>
+                <DeptName>{DeptName}</DeptName>
+                <CompanyName>{CompanyName}</CompanyName>
+                <PositionName>{PositionName}</PositionName>
+            </row>
+        </querylist>
+    </queryobj>
+
+    <queryobj queryid="_employee_info">
+        <!-- 字典列表 -->
+        <querysql sortdir="CompanyName,DeptName,DeOrderID">
+            <![CDATA[select * from (select de._AutoID RelationID,de.DeptEmployeeType,de.PositionId,de.PositionName,
+            de.DeptName,de.DeptID,de.OrderID DeOrderID ,de.EmployeeId
+            , (select DeptName from T_E_Org_Department d where d._autoid=de.CompanyId) CompanyName 
+            , (select count(*) from T_E_Org_DeptEmployee jz where jz.employeeId=em._autoId and jz.DeptEmployeeType=1) JzNum 
+            , em.EmployeeName,em.LoginName,em.EmployeeCode,em.Sex,em.Cellphone,em.Officephone
+            ,em.IsLocked,em._AutoID from T_E_Org_DeptEmployee de inner join T_E_Org_Employee em
+            on de.EmployeeID=em._AutoID where de.DeptEmployeeType=0) t where |^condition^|  |^sortdir^|]]>
+        </querysql>
+        <querylist>
+            <row id="[EmployeeId]">
+                <EmployeeId>{EmployeeId}</EmployeeId>
+                <EmployeeCode>{EmployeeCode}</EmployeeCode>
+                <EmployeeName>{EmployeeName}</EmployeeName>
+                <LoginName>{LoginName}</LoginName>
+                <Sex>{Sex}</Sex>
+                <Officephone>{Officephone}</Officephone>
+                <Cellphone>{Cellphone}</Cellphone>
+                <DeptName>{DeptName}</DeptName>
+                <CompanyName>{CompanyName}</CompanyName>
+                <PositionName>{PositionName}</PositionName>
+                <RelationID>{RelationID}</RelationID>
+                <DeptEmployeeType>{DeptEmployeeType}</DeptEmployeeType>
+                <JzNum>{JzNum}</JzNum>
+                <DeOrderID>{DeOrderID}</DeOrderID>
+                <IsLocked>{IsLocked}</IsLocked>
+            </row>
+        </querylist>
+    </queryobj>
+
+    <queryobj queryid="Org_Department">
+        <!-- 部门查询 -->
+        <querysql sortdir="EmployeeName">
+            <![CDATA[
+              select *,(select TypeName from T_E_Org_DeptType t where t._AutoID=d.TypeID) TypeName
+              ,(select LoginName from T_E_Org_User u where u.CompanyID=d._autoid) sa
+              ,(select DeptName from T_E_Org_Department t where t._AutoId=d.CompanyId) CompanyName
+              from T_E_Org_Department d where _isdel=0 and  |^condition^| |^sortdir^|
+              ]]>
+        </querysql>
+        <querylist>
+            <row id="[_AutoID]">
+                <DeptId>{_AutoID}</DeptId>
+                <DeptCode>{DeptCode}</DeptCode>
+                <DeptName>{DeptName}</DeptName>
+                <CompanyName>{CompanyName}</CompanyName>
+                <TypeName>{TypeName}</TypeName>
+                <OrderID>{OrderID}</OrderID>
+                <DeptState>{DeptState}</DeptState>
+                <PicPosition>{PicPosition}</PicPosition>
+                <UpPosition>{UpPosition}</UpPosition>
+            </row>
+        </querylist>
+    </queryobj>
+</queryobjs>

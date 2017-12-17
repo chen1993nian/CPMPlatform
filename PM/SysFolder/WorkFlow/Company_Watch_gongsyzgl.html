@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>公司印章管理</title>
+    <style type="text/css">
+        /*被选中菜单按钮样式*/
+        .td_SMenuBtn
+        {
+            border-bottom: none;
+            text-align: center;
+            background: url(../../Img/tab0.gif);
+            cursor: pointer;
+            border-top: solid 1px #ABA9AA;
+            border-left: solid 1px #ABA9AA;
+            border-right: solid 1px #ABA9AA;
+            height: 27px;
+        }
+        
+        /*未被选中菜单按钮样式*/
+        .td_MenuBtn
+        {
+            cursor: pointer;
+            text-align: center;
+            border: solid 1px #ABA9AA;
+            height: 27px;
+            background-color: #F6F6F6;
+        }
+        
+        /*按钮缝隙样式*/
+        .td_MenuSpace
+        {
+            border-bottom: solid 1px #ABA9AA;
+        }
+        
+        /*菜单内部框样式*/
+        .td_form
+        {
+            border-left: 1px solid #aba9aa;
+            border-right: 1px solid #aba9aa;
+            border-bottom: 1px solid #aba9aa;
+            background-color: #faf8f8;
+        }
+    </style>
+    <script type="text/javascript">
+        //切换菜单按钮
+        function changeMenuBtn(btnNum) {
+            var menuBtnNum = 4; //菜单按钮个数
+            for (i = 0; i < menuBtnNum; i++) {
+                document.getElementById("td_Menu" + (i + 1).toString()).className = "td_MenuBtn";
+                if ((i + 1) == btnNum) {
+                    document.getElementById("tr_sub" + (i + 1).toString()).style.display = "";
+                }
+                else {
+                    document.getElementById("tr_sub" + (i + 1).toString()).style.display = "none";
+                }
+            }
+            document.getElementById("td_Menu" + btnNum.toString()).className = "td_SMenuBtn";
+            if (btnNum == 2) {
+                if (document.getElementById("frm2").src == "")
+                    document.getElementById("frm2").src = "Company_Watch_Custom.aspx?condition=workflowCode=[QUOTES]OA0013[QUOTES]";
+            }
+            if (btnNum == 3) {
+                if (document.getElementById("frm3").src == "")
+                    document.getElementById("frm3").src = "Company_Watch_Custom.aspx?condition=workflowCode=[QUOTES]OA0014[QUOTES]";
+            }
+            if (btnNum == 4) {
+                if (document.getElementById("frm4").src == "")
+                    document.getElementById("frm4").src = "Company_Watch_Custom.aspx?condition=workflowCode=[QUOTES]OA0012[QUOTES]";
+            }
+        }
+    </script>
+</head>
+<body style=" margin:10px; width: 100%;">
+    <div style="width: 98%;">
+        <table cellspacing="0" cellpadding="0" style="table-layout: fixed; width: 100%;"
+            align="center">
+            <tr>
+                <td id="td_Menu1" class="td_SMenuBtn" onclick="changeMenuBtn(1);">
+                    <nobr>用党委纪委印</nobr>
+                </td>
+                <td style="width: 2px;" class="td_MenuSpace">
+                    &nbsp;
+                </td>
+                <td id="td_Menu2" class="td_MenuBtn" onclick="changeMenuBtn(2);">
+                    <nobr>借印</nobr>
+                </td>
+                <td style="width: 2px;" class="td_MenuSpace">
+                    &nbsp;
+                </td>
+                <td id="td_Menu3" class="td_MenuBtn" onclick="changeMenuBtn(3);">
+                    <nobr>刻印</nobr>
+                </td>
+                <td style="width: 2px;" class="td_MenuSpace">
+                    &nbsp;
+                </td>
+                <td id="td_Menu4" class="td_MenuBtn" onclick="changeMenuBtn(4);">
+                    <nobr>用行政印</nobr>
+                </td>
+            </tr>
+            <tr id="tr_sub1">
+                <td class="td_form" colspan="7">
+                    <iframe id="frm1" width="100%" src="Company_Watch_Custom.aspx?condition=workflowCode=[QUOTES]OA0006[QUOTES]" frameborder="0px" height="400">
+                    </iframe>
+                </td>
+            </tr>
+            <tr id="tr_sub2" style="display: none;">
+                <td class="td_form" colspan="7">
+                    <iframe id="frm2" width="100%" src="" frameborder="0px" height="400">
+                    </iframe>
+                </td>
+            </tr>
+            <tr id="tr_sub3" style=" display:none;">
+                <td class="td_form" colspan="7">
+                    <iframe id="frm3" width="100%" src="" frameborder="0px" height="400">
+                    </iframe>
+                </td>
+            </tr>
+            <tr id="tr_sub4" style=" display:none;">
+                <td class="td_form" colspan="7">
+                    <iframe id="frm4" width="100%" src="" frameborder="0px" height="400">
+                    </iframe>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

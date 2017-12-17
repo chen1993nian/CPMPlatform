@@ -1,0 +1,63 @@
+body
+{
+	margin:10px;
+	background: #eeeff1;
+	color: #555;
+	font: 9pt Arial, sans-serif;
+	scrollbar-highlight-color: #f5f9ff;
+	scrollbar-shadow-color: #828282;
+	color: #000000;
+	scrollbar-3dlight-color: #828282;
+	scrollbar-arrow-color: #797979;
+	scrollbar-track-color: #ececec;
+	scrollbar-darkshadow-color: #ffffff;
+	scrollbar-face-color:#ececec
+}
+
+#container
+{
+	margin: 0 auto;
+	width:400px;
+}
+table{
+	table-layout:fixed;/* 只有定义了表格的布局算法为fixed，下面td的定义才能起作用。 */
+}
+ #columns td
+{
+	word-break:keep-all;/* 不换行 */
+	white-space:nowrap;/* 不换行 */
+	overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+	text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+	padding: 10px;
+	vertical-align: top;
+
+}
+.portlet
+{
+	background: white;
+	border-color: #bba;
+	border-style: solid;
+	border-width: 1px;
+	margin: 0 0 5px;
+	width: 100%;
+	color: #443;
+	font-weight: normal;
+	padding:3px;
+	float:left;
+}
+.sort_placeholder
+{	margin:0 0 0 20px;
+	padding:2px;
+	background: #bba;
+	border:1px dashed red;
+}
+.activeclass
+{
+	border:1px dashed red;
+}
+th
+{
+	color: #443;
+	font-size:10pt;
+	font-weight: bold;
+}

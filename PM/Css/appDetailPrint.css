@@ -1,0 +1,57 @@
+﻿.NoPrint{display:none;} 
+.PageNext{page-break-after: always;} 
+/*大表格样式*/
+table.normaltbl,table.redtbl,table.subtbl
+{
+    table-layout:fixed;
+	border-collapse: collapse;
+    margin-left:auto;
+	margin-right:auto;
+	font-size: 12px;
+	width:760px;
+	line-height:20px;
+}
+
+table.normaltbl
+{
+    border: #808080 1px solid;
+    border-collapse:collapse;
+	color:#393939;
+}
+
+.normaltbl td{border:#808080 1px solid;border-collapse:collapse;padding:3px;}
+
+table.redtbl
+{
+    border:red 1px solid;
+    color:red;
+}
+.normaltbl caption
+{
+	border-top:#080808 1px solid;
+	border-left:#080808 1px solid;
+	border-right:#080808 1px solid;
+	font-weight:bold;
+	font-size: 11pt;
+	color:#555;
+    height:30px;
+	line-height:30px;
+    text-align:center;
+}
+
+
+
+#divAppTableHtml table
+{
+    table-layout:fixed;
+    border: #808080 1px solid;
+    border-collapse:collapse;
+	color:#393939;
+    margin-left:auto;
+	margin-right:auto;
+	font-size: 12px;
+	width:760px;
+	line-height:20px;
+}
+
+#divAppTableHtml td{border:#808080 1px solid;border-collapse:collapse;padding:3px;}

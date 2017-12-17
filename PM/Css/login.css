@@ -1,0 +1,22 @@
+body
+{
+}
+.login_input {
+	background-color: #C7C0AE;
+	height: 14px;
+	border: 1px solid #FFFFFF;
+	width: 135px;
+}
+.white_font
+{
+	font-size:12px;
+	color:#ffffff
+}
+.wel_pic2 {
+	background-image: url(../img/desktop/login_pic.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+#loginZone{
+	 background:url(../img/desktop/login_bg.jpg);
+}

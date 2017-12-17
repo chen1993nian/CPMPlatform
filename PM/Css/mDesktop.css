@@ -1,0 +1,43 @@
+﻿html,body{margin:0px;padding:0px;}
+        
+.gray
+{
+    background-color:Gray;
+    padding:8px;
+    font-weight:bold;
+    font-size:16pt;
+    }
+#bodydiv
+{
+    background-color:#eee;
+    padding:10px;
+    font-size:14pt;
+}
+.logout{font-size:16pt;}
+.listitem
+{
+    line-height:150%;
+    }
+.listitem a
+{
+    font-size:16pt;
+    padding-left:20px;
+    text-decoration:none;
+    color:darkblue;
+}
+.todolink
+{    
+    background:url(../img/common/to_do_list_cheked_1.png) no-repeat left center;
+    }
+.newslink
+{
+    background:url(../img/common/world.png) no-repeat left center;
+    }
+ .meetinglink
+{
+    background:url(../img/common/comments.png) no-repeat left center;
+    } 
+.notelink
+{
+    background:url(../img/common/speaker.gif) no-repeat left center;
+}

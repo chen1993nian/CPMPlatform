@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FrmTable.master.cs" Inherits="EIS.Studio.SysFolder.DefFrame.FrmTable" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>业务定义&nbsp;[<%=TblNameCn%>]</title>
+    <link rel="stylesheet" href="../../bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../..//bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="../../css/bootStrap_main.css"/>
+    <script type="text/javascript" src="../../js/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.notice.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="../../bootstrap/3.2.0/js/html5shiv.min.js"></script>
+      <script src="../../bootstrap/3.2.0/js/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        body{padding-top: 70px;}
+        .navbar-default ul.navbar-nav > li.active>a{font-weight:bold;color:#3366ff;}
+        .navbar-default ul.navbar-nav > li.active>a:hover{color:#3366ff;}
+        .navbar-default ul.navbar-nav > li>a:hover{color:#3366ff;}
+    </style>
+    <script type="text/javascript">
+        function success() {
+            $.noticeAdd({ text: '保存成功！', stay: false });
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand success" href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;<%=TblNameCn%>&nbsp;</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="FrmTableInfo.aspx?tblName=<%=TblName %>" target="_self">基本信息</a></li>
+            <li><a href="FrmTableFields.aspx?tblName=<%=TblName %>" target="_self">字段定义</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">字段风格 <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li><a href="#">字段事件</a></li>
+            <li><a href="#">业务逻辑</a></li>
+            <li><a href="#">子表定义</a></li>
+
+            <li><a href="#">业务预览</a></li>
+            <li><a href="#">编辑界面</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <form id="form1" class="form-horizontal" runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </form>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="../..//Bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>

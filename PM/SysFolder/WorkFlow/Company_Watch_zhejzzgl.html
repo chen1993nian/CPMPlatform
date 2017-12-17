@@ -1,0 +1,94 @@
+﻿<html>
+<head>
+    <title>证件证照管理</title>
+    <style type="text/css">
+        /*被选中菜单按钮样式*/
+        .td_SMenuBtn
+        {
+            border-bottom: none;
+            text-align: center;
+            background: url(../../Img/tab0.gif);
+            cursor: pointer;
+            border-top: solid 1px #ABA9AA;
+            border-left: solid 1px #ABA9AA;
+            border-right: solid 1px #ABA9AA;
+            height: 27px;
+        }
+        
+        /*未被选中菜单按钮样式*/
+        .td_MenuBtn
+        {
+            cursor: pointer;
+            text-align: center;
+            border: solid 1px #ABA9AA;
+            height: 27px;
+            background-color: #F6F6F6;
+        }
+        
+        /*按钮缝隙样式*/
+        .td_MenuSpace
+        {
+            border-bottom: solid 1px #ABA9AA;
+        }
+        
+        /*菜单内部框样式*/
+        .td_form
+        {
+            border-left: 1px solid #aba9aa;
+            border-right: 1px solid #aba9aa;
+            border-bottom: 1px solid #aba9aa;
+            background-color: #faf8f8;
+        }
+    </style>
+    <script type="text/javascript">
+        //切换菜单按钮
+        function changeMenuBtn(btnNum) {
+            var menuBtnNum = 2; //菜单按钮个数
+            for (i = 0; i < menuBtnNum; i++) {
+                document.getElementById("td_Menu" + (i + 1).toString()).className = "td_MenuBtn";
+                if ((i + 1) == btnNum) {
+                    document.getElementById("tr_sub" + (i + 1).toString()).style.display = "";
+                }
+                else {
+                    document.getElementById("tr_sub" + (i + 1).toString()).style.display = "none";
+                }
+            }
+            document.getElementById("td_Menu" + btnNum.toString()).className = "td_SMenuBtn";
+            if (btnNum == 2) {
+                if (document.getElementById("frm2").src == "")
+                    document.getElementById("frm2").src = "Company_Watch_Custom.aspx?condition=workflowCode=[QUOTES]OA0016[QUOTES]";
+            }
+        }
+    </script>
+</head>
+<body style=" margin:10px; width: 100%;">
+    <div style="width: 98%;">
+        <table cellspacing="0" cellpadding="0" style="table-layout: fixed; width: 100%;"
+            align="center">
+            <tr style="width: 100%;">
+                <td id="td_Menu1" class="td_SMenuBtn" onclick="changeMenuBtn(1);">
+                    <nobr>证照借用</nobr>
+                </td>
+                <td style="width: 2px;" class="td_MenuSpace">
+                    &nbsp;
+                </td>
+                <td id="td_Menu2" class="td_MenuBtn" onclick="changeMenuBtn(2);">
+                    <nobr>证照借出</nobr>
+                </td>
+            </tr>
+            <tr id="tr_sub1">
+                <td class="td_form" colspan="3">
+                    <iframe width="100%" src="Company_Watch_Custom.aspx?condition=workflowCode=[QUOTES]OA0015[QUOTES]" frameborder="0px" height="400">
+                    </iframe>
+                </td>
+            </tr>
+            <tr id="tr_sub2" style="display: none;">
+                <td class="td_form" colspan="3">
+                    <iframe id="frm2" width="100%" src="" frameborder="0" height="400">
+                    </iframe>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

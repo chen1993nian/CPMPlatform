@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<queryobjs>
+	<queryobj queryid="Org_EmpLimit">
+		<!-- 员工权限-员工列表查询 -->
+		<querysql sortdir="num,EmployeeName">
+			<![CDATA[select * from (select 0 num, 'everyone' EmployeeId,'' LoginName,'全体员工' EmployeeName,'' EmployeeCode,'否' IsLocked,'' DeptName, '' PositionName
+                union select 1 num, de.EmployeeId ,LoginName,e.EmployeeName+'（'+e.EmployeeCode+'）' EmployeeName,e.EmployeeCode,e.IsLocked,de.DeptName,de.PositionName 
+                from T_E_Org_Employee e inner join T_E_Org_DeptEmployee de on e._AutoID=de.EmployeeId  
+                where de.DeptEmployeeType=0 and e.loginName is not null  and e.loginName  !='' ) t where |^condition^| |^sortdir^|]]>
+		</querysql>
+		<querylist>
+			<row id="[EmployeeId]">
+                <LoginName>{LoginName}</LoginName>
+                <EmployeeId>{EmployeeId}</EmployeeId>
+                <EmployeeCode>{EmployeeCode}</EmployeeCode>
+                <EmployeeName>{EmployeeName}</EmployeeName>
+                <IsLocked>{IsLocked}</IsLocked>
+                <PositionName>{PositionName}</PositionName>
+                <DeptName>{DeptName}</DeptName>
+			</row>
+		</querylist>
+	</queryobj>
+ </queryobjs>

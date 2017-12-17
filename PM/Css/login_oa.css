@@ -1,0 +1,131 @@
+﻿
+
+html {
+	text-align: center; background: white;width:100%;
+}
+body {
+	text-align: center; 
+	padding: 0px; 
+	margin: 0px auto; 
+	width: 100%;  
+	font: 12px lucida, helvetica, arial, sans-serif; 
+	color: #333333;overflow:hidden;
+}
+
+a.forgetlink
+{
+	text-decoration:none;margin:10px 0px 0px 10px;
+}
+img {
+	border: 0px;  
+	padding: 0px; 
+	font-style: inherit; 
+	margin: 0px; 
+	font-family: inherit; font-size: 100%; 
+	vertical-align: baseline;  
+	font-weight: inherit;
+}
+span.tip
+{
+	display:inline-block;
+	font-family:宋体,arial, sans-serif;
+	color:Red;
+	margin: 0px  0px 20px 40px;
+}
+
+
+#header {
+	background: #fff;
+	margin-top:0px;
+	margin-left:auto;
+	margin-right:auto;
+	width:947px;
+	height:69px;
+	border: 1px solid #dfdfdc;
+}
+.formbody {
+    margin-left: auto;
+    margin-right: auto;
+    width: 949px;
+    height: 430px;
+    background: url(../img/Handlers/getCorpLoginBg.ashx) no-repeat;
+    text-align: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+	
+
+
+.logo{
+    background: url(../img/Handlers/getCorpLogo.ashx) no-repeat;
+    height:81px;
+    width:700px;
+    margin: -10px 0px 0px 0px;
+    padding-left:96px;
+    line-height:81px;
+	font-family: 黑体, helvetica, arial, sans-serif; 
+	font-size:36px;
+	font-weight:bold;
+    text-align:left;
+}
+
+.login-box{ width: 588px; height: 315px; position: absolute; left: 50%; top: 50%; margin-left: -475px; margin-top: -280px}
+	
+.logoZone{float:left;}
+.outLinks{color:#8e8e8e;float:right;line-height:32px;font-family:simsun,sans-serif;margin-top:20px;margin-right:20px;}
+.outLinks a{color:#8e8e8e;text-decoration:none;}
+.outLinks a:hover{color:#8e8e8e;text-decoration:underline;}
+h2 {
+	display: inline; 
+	font-family: 黑体, helvetica, arial, sans-serif; 
+	font-size:24px;
+	font-weight:bold;
+	color: darkblue; 
+	margin-right: auto;
+	margin-left: auto;
+}
+.formcenter {
+	display: block;
+	border: 0px;
+	margin: 10px;
+	display: block;
+	padding: 10px;
+
+}
+.formcenter p{
+    height:30px;
+    line-height:30px;
+    }
+#Button1,#Button2
+{
+    font-family:simsun,sans-serif;
+    font-size:14px;
+    padding:0px;
+    width:90px;
+    color:#ffffff;
+	background-color:#69b2dc;
+    font-weight: bold; cursor: pointer;
+    border-width:0px;
+    height:38px;
+    width:208px;
+}
+label
+{
+    font-family:arial,"宋体"; 
+    font-size:14px;
+    }
+input[type=text],input[type=password]
+{
+    border:1px solid gray;
+    padding:5px;
+    font-family:arial,"宋体"; 
+    height: 16px;
+    font-size:14px;
+    width:195px;
+	color:#444;
+	font-weight:bolder;
+    }
+
+#txtCode{
+    width:195px;
+    }

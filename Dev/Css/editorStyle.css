@@ -1,0 +1,258 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+html
+{
+	height:100%;
+	overflow:auto;
+}
+body{
+    font-weight:normal;
+    font-style:normal;
+    font-family:宋体,Tahoma,Helvetica,Arial,sans-serif;
+    font-size:12px;
+    background-color:white;
+    height:100%;
+	text-align: center; 
+	overflow:visible;
+}
+
+/*大表格样式*/
+table.normaltbl,table.redtbl,table.subtbl
+{
+    table-layout:fixed;
+	border-collapse: collapse;
+    margin-left:auto;
+	margin-right:auto;
+	font-size: 12px;
+	width:760px;
+	line-height:20px;
+}
+
+table.normaltbl
+{
+	border:#89B2FD 1px solid;
+	color:#393939;
+	background:#FAF8F8;
+	empty-cells:show;
+}
+table.redtbl
+{
+    border:red 1px solid;
+    color:red;
+}
+.normaltbl caption
+{
+	border-top:#89B2FD 1px solid;
+	border-left:#89B2FD 1px solid;
+	border-right:#89B2FD 1px solid;
+	font-weight:bold;
+	font-size: 11pt;
+	color:#555;
+	background:url(images/table_head.gif) repeat-x;
+    	background-size:contain;
+	background-color:rgb(214, 228, 242);
+    height:30px;
+	line-height:30px;
+}
+.redtbl caption
+{
+    font:bold 14pt/40px 黑体;
+}
+
+.normaltbl > tr > td , .normaltbl > tbody > tr > td , .subtbl > tbody > tr > td, .subtbl > thead > tr > td
+{
+	text-align:left;
+	padding:1px 1px 1px 3px;
+	height:26px;
+	line-height:26px;
+	border:1px #89B2FD solid;
+}
+.redtbl > tr > td , .redtbl > tbody > tr > td{
+	text-align:left;
+	padding:3px;
+	border:1px red solid;
+	height:28px;
+}
+
+table.subtbl
+{
+    border:#89B2FD 1px solid;
+    color:#393939;
+	background:#FAF8F8;
+}
+.subtbl caption
+{
+	border-top:#89B2FD 0px solid;
+	border-left:#89B2FD 1px solid;
+	border-right:#89B2FD 1px solid;
+	text-align:left;
+	padding-left:10px;
+	font-size: 11pt;
+	color:#555;
+	background-color:#d6e4f2;
+    height:30px;
+	line-height:30px;
+	
+}
+.subtbl > tbody > tr > td {
+	border:1px #89B2FD solid;
+	padding:1px;
+	height:25px;
+}
+.subtbl > tbody > tr > td.DELBTN ,.subtbl > thead > tr > td.ADDBTN {
+    text-align:center;
+    width:60px;
+ }
+ .subtbl > tfoot {
+     background-color:#f0f8ff;
+ }
+th{
+	color:White;
+	height:25px;
+	font:bold 10pt/26px 黑体;
+}
+
+input[type=button],input[type=submit]
+{
+    padding:3px;
+	font-size:9pt;
+}
+.btn01{
+    padding:3px;
+    margin:0px;
+    border:#87a3c1 1px solid;
+    color:#333;
+    background:url(../img/btn01.gif) 0px 0px; 
+}
+.btn02
+{
+    padding:3px;
+    margin:0px;
+    border:#a2904d 1px solid;
+    color:#333;
+    background:url(../img/btn01.gif) 0px -66px; 
+ }
+.TextBoxInChar{
+    width:98%;
+    height:18px;
+}
+.TextBoxInOutPage{
+    width:98%;
+    height:18px;
+    overflow:auto;    
+}
+.TextBoxInArea{
+    width:100%;
+    overflow:auto;
+}
+.TextBoxInDate
+{
+	margin:1px;
+    width:96%;
+    height:18px;
+    border:#c0bbb4 1px solid;
+    padding-top:2px;
+    padding-left:2px;
+    padding-bottom:1px;
+    font-size:10pt;
+    
+}
+.normaltbl .TextBoxInChar,.normaltbl .TextBoxInArea,.normaltbl .TextBoxInOutPage 
+{
+    border:#c0bbb4 1px solid;
+    padding-top:2px;
+    padding-left:2px;
+    padding-bottom:1px;
+    font-size:10pt;
+    float:left;
+}
+
+.redtbl .TextBoxInChar, .redtbl .TextBoxInDate,.redtbl .TextBoxInArea,.redtbl .TextBoxInOutPage
+{
+    background-color:#ffffe0;
+    border-width:0px;
+    padding-top:2px;
+    padding-left:2px;
+    padding-bottom:1px;
+    font-size:10pt;
+    float:left;
+}
+.subtbl .TextBoxInChar , .subtbl .TextBoxInOutPage
+{
+	padding:1px;
+	border:1px solid white;
+	background:#ffffe0;
+}
+a.subaddbtn{
+	display:block;
+	width:40px;
+}
+a.subdelbtn{
+	display:block;
+	width:40px;
+}
+.gray{color:Gray}
+.red{color:red}
+.green{color:green}
+.Read{
+    color:Gray;
+}
+.hidden{/*display:none;*/}
+
+label.error{
+    font-weight:600;
+    color:red;
+    margin-left: 10px;
+    width: auto;
+    display: inline;
+}
+.RequiredStar{    
+	color:red;
+	font-weight:bold;
+    width:12px;
+    text-align:center;
+    vertical-align:middle;
+    width:10px;
+    height:100%;
+}
+.RequiredTbl td{
+	text-indent:0px;
+	padding:0px;
+}
+.OutPageTbl td
+{
+	text-indent:0px;
+	padding:0px;
+}
+.ErrorMsg{
+	background:	#ffff99;
+	padding:6px;
+	margin:20px;
+	border:double 3px  orangered;
+}
+.ErrorMsg ol{
+	margin-left:30px;
+}
+.TaskName{
+	color:Blue;
+}
+
+.tip{
+    overflow:auto;
+	overflow-x:hidden;
+	margin-left:auto;
+	margin-right:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    border:dotted 1px orange;
+    background:#F9FB91;
+    text-align:left;
+    padding:5px;
+}
+dl{margin-left:auto;margin-right:auto;}
+a{text-decoration:none;color:Blue;}
+a:hover{color:Red;}
+.linkAdd , .linkDelAll, .linkWFAll{background-color:#ff7f50 ;border-radius:3px;color:White;display:inline-block;padding:3px 8px;margin:2px 0px 2px 3px;font-weight:bold;}
+.linkAdd:hover , .linkDelAll:hover, .linkWFAll:hover{color:White;}

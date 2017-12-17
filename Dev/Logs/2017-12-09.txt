@@ -1,0 +1,26 @@
+[20:29:04]|Error|System.IO.FileNotFoundException: 未能加载文件或程序集“HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a”或它的某一个依赖项。系统找不到指定的文件。
+文件名:“HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a”
+   在 EIS.AppModel.ModelBuilder.GetTblHtml(String tblName, String strWhere, StringBuilder sbModel, XmlDocument xmlDoc)
+   在 EIS.WebBase.SysFolder.AppFrame.AppInput.getTblHtml() 位置 e:\CEIM开源协同办公系统20171209\StudioJZY\SysFolder\AppFrame\AppInput.aspx.cs:行号 811
+
+=== 预绑定状态信息 ===
+日志: DisplayName = HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a
+ (Fully-specified)
+日志: Appbase = file:///E:/CEIM开源协同办公系统20171209/StudioJZY/
+日志: 初始 PrivatePath = E:\CEIM开源协同办公系统20171209\StudioJZY\bin
+调用程序集: EIS.AppEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null。
+===
+日志: 此绑定从 default 加载上下文开始。
+日志: 正在使用应用程序配置文件: E:\CEIM开源协同办公系统20171209\StudioJZY\web.config
+日志: 使用主机配置文件: D:\Documents\IISExpress\config\aspnet.config
+日志: 使用 C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config 的计算机配置文件。
+日志: 策略后引用: HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a
+日志: 尝试下载新的 URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/fb645797/cf2bf74c/HtmlAgilityPack.DLL。
+日志: 尝试下载新的 URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/fb645797/cf2bf74c/HtmlAgilityPack/HtmlAgilityPack.DLL。
+日志: 尝试下载新的 URL file:///E:/CEIM开源协同办公系统20171209/StudioJZY/bin/HtmlAgilityPack.DLL。
+日志: 尝试下载新的 URL file:///E:/CEIM开源协同办公系统20171209/StudioJZY/bin/HtmlAgilityPack/HtmlAgilityPack.DLL。
+日志: 尝试下载新的 URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/fb645797/cf2bf74c/HtmlAgilityPack.EXE。
+日志: 尝试下载新的 URL file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/Temporary ASP.NET Files/vs/fb645797/cf2bf74c/HtmlAgilityPack/HtmlAgilityPack.EXE。
+日志: 尝试下载新的 URL file:///E:/CEIM开源协同办公系统20171209/StudioJZY/bin/HtmlAgilityPack.EXE。
+日志: 尝试下载新的 URL file:///E:/CEIM开源协同办公系统20171209/StudioJZY/bin/HtmlAgilityPack/HtmlAgilityPack.EXE。
+ 

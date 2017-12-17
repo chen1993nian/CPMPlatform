@@ -1,0 +1,39 @@
+﻿.notice-wrap {
+	position: fixed;
+	top: 2px;
+	right: 2px;
+	width: 200px;
+	z-index: 9999;
+	
+}
+
+* html .notice-wrap {
+	position: absolute;		
+}
+ 
+.notice-item {
+	height: 50px;
+	background: #000 url(../img/check.png) no-repeat 5% 50%;
+	color: #eee;
+	padding: 6px 6px 0px 50px;
+	font-family:Arial lucida Grande;
+	font-size: 12px;
+	border: 2px solid #999;
+	display: block;
+	position: relative;
+	margin: 0px 0px 12px 0px;
+}
+.notice-item p{
+	font-size: 16px;
+	margin-top:18px;
+	font-weight:600;
+}
+.notice-item-close {
+	position: absolute;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	right: 6px;
+	top: 6px;
+	cursor: pointer;
+}

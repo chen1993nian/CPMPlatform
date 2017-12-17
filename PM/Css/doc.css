@@ -1,0 +1,62 @@
+﻿body {
+}
+
+.flexigrid div.fbutton .newfolder
+{
+	background: url(../img/doc/folder_add.png) no-repeat center left transparent;
+}
+.flexigrid div.fbutton .move
+{
+	background: url(../img/doc/folder_go.png) no-repeat center left transparent;
+}
+.flexigrid div.fbutton .cut
+{
+	background: url(../img/doc/cut.png) no-repeat center left transparent;
+}
+.flexigrid div.fbutton .copy
+{
+	background: url(../img/doc/page_copy.png) no-repeat center left transparent;
+}
+.flexigrid div.fbutton .paste
+{
+	background: url(../img/doc/page_paste.png) no-repeat center left transparent;
+}
+.flexigrid div.fbutton .folderback
+{
+	background: url(../img/doc/folder-back.gif) no-repeat center left transparent;
+}
+.flexigrid div.fbutton .arrowback
+{
+	background: url(../img/doc/arrow_left.png) no-repeat center left transparent;
+}
+.flexigrid div.fbutton .folderedit
+{
+	background: url(../img/doc/folder_edit.png) no-repeat center left transparent;
+}
+.flexigrid div.fbutton .newfile
+{
+	background: url(../img/doc/page_add.png) no-repeat center left transparent;
+}
+.flexigrid div.fbutton .limit
+{
+	background: url(../img/doc/folder_user.png) no-repeat center left transparent;
+}
+a.filename ,a.foldername {
+	text-decoration:none;color:black;}
+a.filename:hover,a.foldername:hover {
+	text-decoration:underline;color:blue;}
+.flag{width:16px;margin:3px 2px 0px 0px;height:14px;float:left;overflow:hidden;padding:0px;}
+.folder{background:url(../img/doc/folder.gif) no-repeat 0px 0px}
+.foldershare{background:url(../img/doc/folder_user.png) no-repeat 0px 0px}
+
+.doc{background:url(../img/doc/small_doc.gif) no-repeat 0px 0px}
+.xls{background:url(../img/doc/small_xls.gif) no-repeat 0px 0px}
+.docx{background:url(../img/doc/small_doc.gif) no-repeat 0px 0px}
+.xlsx{background:url(../img/doc/small_xls.gif) no-repeat 0px 0px}
+.pptx{background:url(../img/doc/small_xls.gif) no-repeat 0px 0px}
+.pdf{background:url(../img/doc/doc_pdf.png) no-repeat 0px 0px}
+.gif{background:url(../img/doc/image.png) no-repeat 0px 0px}
+.png{background:url(../img/doc/image.png) no-repeat 0px 0px}
+.bmp{background:url(../img/doc/image.png) no-repeat 0px 0px}
+.jpg{background:url(../img/doc/image.png) no-repeat 0px 0px}
+.xml{background:url(../img/doc/page_white_code.png) no-repeat 0px 0px}

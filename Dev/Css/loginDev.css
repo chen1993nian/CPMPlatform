@@ -1,0 +1,114 @@
+html {
+	text-align: center; background: #f7f7f7;width:100%;
+}
+body {
+	text-align: center; 
+	padding: 0px; 
+	margin: 0px auto; 
+	width: 100%;  
+	font: 12px lucida, helvetica, arial, sans-serif; 
+	color: #333333;
+}
+
+a.forgetlink
+{
+	text-decoration:none;margin:10px 0px 0px 10px;
+}
+img {
+	border: 0px;  
+	padding: 0px; 
+	font-style: inherit; 
+	margin: 0px; 
+	font-family: inherit; font-size: 100%; 
+	vertical-align: baseline;  
+	font-weight: inherit;
+}
+span.tip
+{
+	display:inline-block;
+	font-family:ËÎÌå,arial, sans-serif;
+	color:Red;
+	margin: 0px  0px 20px 40px;
+}
+#wrapper {
+	position: relative; 
+	margin-right: auto; 
+	margin-left: auto; 
+	margin-top:50px;
+	background-color: #fff; 
+    width: 945px;
+    height: 425px;
+    background: url(../img/desktop/login_main.jpg) no-repeat;
+    text-align: left;
+    border: 1px solid #d2d1cf;
+}
+#wrapper p{height:30px;}
+#header {
+	border-bottom: darkcyan 1px solid; 
+	padding-bottom: 10px; 
+	padding-right: 0px; 
+	background: #c5e6ea; 
+	padding-top: 25px;
+	text-align:center;
+}
+h2 {
+	display: inline; 
+	font-family: ºÚÌå, helvetica, arial, sans-serif; 
+	font-size:24px;
+	font-weight:bold;
+	color: darkblue; 
+	margin-right: auto;
+	margin-left: auto;
+}
+.formcenter {
+	display: block; 
+	border: 0px; 
+	margin: 120px 0px 0px 630px; 
+	display: block; 
+    width:300px;
+}
+#Button1,#Button2
+{
+    padding:3px;
+    width: 205px;
+}
+label
+{
+    font-family:arial,"ËÎÌå"; 
+    font-size:14px;
+    }
+input[type=text],input[type=password]
+{
+    border:#bbb 1px solid;
+    padding:3px;
+    font-family:arial,"ËÎÌå"; 
+    height: 16px;
+    font-size:14px;
+    width:200px;
+    }
+
+        .VerifyCode {
+            width: 205px;
+            height: 50px;
+            color: gray;
+            text-align: center;
+            line-height: 50px;
+            font-size: 18px;
+            font-family: Î¢ÈíÑÅºÚ,ËÎÌå;
+            border: 1px solid #9c9494;
+            cursor:pointer;
+        }
+
+#Button1,#Button2
+{
+    font-family:simsun,sans-serif;
+    font-size:14px;
+    padding:0px;
+    width:90px;
+    color:#ffffff;
+	background-color:#69b2dc;
+    font-weight: bold; cursor: pointer;
+    border-width:0px;
+    height:38px;
+    width:208px;
+}

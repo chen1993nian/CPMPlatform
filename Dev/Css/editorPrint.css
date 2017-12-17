@@ -1,0 +1,150 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+html
+{
+	height:100%;
+	overflow:auto;
+}
+body{
+    font-weight:normal;
+    font-style:normal;
+    font-family:宋体,Tahoma,Helvetica,Arial,sans-serif;
+    font-size:14px;
+    background-color:white;
+    height:100%;
+	text-align: center; 
+	overflow:visible;
+}
+table.printTbl
+{
+    table-layout:fixed;
+	border-collapse: collapse;
+    margin-left:auto;
+	margin-right:auto;
+	font-size: 14px;
+	width:17cm;
+}
+
+.printTbl td{
+	text-align:left;
+	padding:1px 1px 1px 3px;
+	border:1px #444 solid;
+	height:30px;
+}
+.printTbl td.noborder{border-width:0px;}
+
+table.subtbl
+{
+    table-layout:fixed;
+	border-collapse: collapse;
+    margin-left:auto;
+	margin-right:auto;
+	font-size: 14px;
+	width:17cm;
+}
+.subtbl td {
+	text-align:left;
+	border:1px #444 solid;
+	padding:1px 1px 1px 3px;
+	height:25px;
+}
+
+.gray{color:Gray}
+.red{color:red}
+.green{color:green}
+
+.menubar
+{
+    
+    line-height:34px;
+    height:33px;
+    overflow:hidden;
+    z-index:100;
+}
+.topnav{
+    width: 100%; 
+    left:0px;
+    display: block; 
+    z-index: 100; 
+    overflow: visible; 
+    position: fixed; 
+    top: 0px; 
+    background-image: url(../img/toolbar_bg.gif);  
+    height: 31px; 
+    border-bottom:#cadcea 1px solid;
+}
+a.linkbtn{
+	line-height:20px;
+	padding:0px;
+	text-decoration:none;
+	display:inline-block;
+	color:Blue;
+}
+a.linkbtn:hover{
+	text-decoration:underline;
+	color:Red;
+}
+.split{
+    color:#b1d7e9;
+    width:10px;
+    text-align:center;
+    display:inline-block;
+    font-style:normal;
+    } 
+
+    
+/*大表格样式*/
+table.normaltbl,table.redtbl,table.subtbl
+{
+    table-layout:fixed;
+	border-collapse: collapse;
+    margin-left:auto;
+	margin-right:auto;
+	font-size: 12px;
+	width:760px;
+	line-height:20px;
+}
+
+table.normaltbl
+{
+	border:#808080 1px solid;
+	color:#393939;
+}
+.normaltbl caption
+{
+	font-weight:bold;
+	font-size: 14pt;
+	font-family: 黑体,宋体;
+	color:#555;
+    height:40px;
+	line-height:40px;
+	
+}
+
+.normaltbl > tr > td , .normaltbl > tbody > tr > td , .subtbl > tbody > tr > td, .subtbl > thead > tr > td
+{
+	text-align:left;
+	padding:1px 1px 1px 3px;
+	border:1px #808080 solid;
+}
+
+table.subtbl
+{
+    border:#808080 1px solid;
+    color:#393939;
+}
+.subtbl > tbody > tr > td {
+	border:1px #808080 solid;
+	padding:1px;
+	height:25px;
+}
+.subtbl > tbody > tr > td.DELBTN ,.subtbl > thead > tr > td.ADDBTN {
+    text-align:center;
+    height:26px;
+    width:30px;
+    padding-left:3px;
+    text-decoration:none;
+    }
+

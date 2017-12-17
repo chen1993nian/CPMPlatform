@@ -1,0 +1,92 @@
+html {
+	text-align: center; background: #f7f7f7;width:100%;
+}
+body {
+	text-align: center; 
+	padding: 0px; 
+	margin: 0px auto; 
+	width: 100%;  
+	font: 12px lucida, helvetica, arial, sans-serif; 
+	color: #333333;
+}
+
+a.forgetlink
+{
+	text-decoration:none;margin:10px 0px 0px 10px;
+}
+img {
+	border: 0px;  
+	padding: 0px; 
+	font-style: inherit; 
+	margin: 0px; 
+	font-family: inherit; font-size: 100%; 
+	vertical-align: baseline;  
+	font-weight: inherit;
+}
+span.tip
+{
+	display:inline-block;
+	font-family:宋体,arial, sans-serif;
+	color:Red;
+	margin: 0px  0px 20px 40px;
+}
+#wrapper {
+	position: relative; 
+	margin-right: auto; 
+	margin-left: auto; 
+	width: 370px; 
+	margin-top:60px;
+	text-align: left; 
+	background-color: #fff; 
+	width: 370px;
+	border:cadetblue 5px solid;
+}
+
+#header {
+	border-bottom: darkcyan 1px solid; 
+	padding-bottom: 10px; 
+	padding-right: 0px; 
+	background: #c5e6ea; 
+	padding-top: 25px;
+	text-align:center;
+}
+h2 {
+	display: inline; 
+	font-family: 黑体, helvetica, arial, sans-serif; 
+	font-size:24px;
+	font-weight:bold;
+	color: darkblue; 
+	margin-right: auto;
+	margin-left: auto;
+}
+.formcenter {
+
+	padding: 20px; 
+	display: block; 
+	border: 0px; 
+	background-color: #fff; 
+	margin: 10px; 
+	display: block; 
+
+}
+#Button1,#Button2
+{
+    padding:3px;
+}
+label
+{
+    font-family:arial,"宋体"; 
+    font-size:14px;
+    }
+input[type=text],input[type=password]
+{
+    border:1px solid gray;
+    padding:5px;
+    font-family:arial,"宋体"; 
+    height: 16px;
+    font-size:14px;
+    width:200px;
+	color:#444;
+	font-weight:bolder;
+    }
+

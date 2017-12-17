@@ -1,0 +1,104 @@
+[15:18:32]|Error|发生错误 ExecuteScalar:IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'dbo.[1 T_SG_Basic_MaterialsClassifyNEW]') AND type in (N'U')) 
+                select count(*) from 1 T_SG_Basic_MaterialsClassifyNEW 
+                else 
+                select 0,“1”附近有语法错误。 
+[16:07:15]|Error|发生错误 ExecuteTable:select isnull(_wfstate,'') state , _AutoId from T_E_Sys_WebId where _autoid='883b5a16-d986-47c9-ac34-8e18a1c7ad42',列名 '_wfstate' 无效。 
+[16:07:24]|Error|System.Data.SqlClient.SqlException (0x80131904): 列名 '_wfstate' 无效。
+   在 EIS.DataAccess.SysDatabase.ExecuteTable(String command)
+   在 EIS.WebBase.SysFolder.AppFrame.AppInput.Page_Load(Object sender, EventArgs e) 位置 e:\CEIM开源协同办公系统20171209\StudioJZY\SysFolder\AppFrame\AppInput.aspx.cs:行号 1023
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:0eab8386-0190-4c59-8438-c59599d65704
+Error Number:207,State:1,Class:16 
+[16:07:45]|Error|发生错误 ExecuteTable:select isnull(_wfstate,'') state , _AutoId from T_E_Sys_WebId where _autoid='883b5a16-d986-47c9-ac34-8e18a1c7ad42',列名 '_wfstate' 无效。 
+[16:07:47]|Error|System.Data.SqlClient.SqlException (0x80131904): 列名 '_wfstate' 无效。
+   在 EIS.DataAccess.SysDatabase.ExecuteTable(String command)
+   在 EIS.WebBase.SysFolder.AppFrame.AppInput.Page_Load(Object sender, EventArgs e) 位置 e:\CEIM开源协同办公系统20171209\StudioJZY\SysFolder\AppFrame\AppInput.aspx.cs:行号 1023
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+ClientConnectionId:0eab8386-0190-4c59-8438-c59599d65704
+Error Number:207,State:1,Class:16 
+[16:38:18]|Error|发生错误 ExecuteNonQuery:Insert T_E_Org_Employee (
+ 					_AutoID,
+					_UserName,
+					_OrgCode,
+					_CreateTime,
+					_UpdateTime,
+					_IsDel,
+					EmployeeCode,
+					EmployeeName,
+					SysUser,
+					UserType,
+                    LoginName,
+                    LoginPass,
+                    IsLocked,
+                    LockReason,
+					Sex,
+					Birthday,
+					Nationality,
+					Marriage,
+					IDcard,
+                    SID,
+					Address,
+					City,
+					ZipCode,
+					EmployeeType,
+					EmployeeState,
+					EMail,
+					Homephone,
+					Cellphone,
+					Officephone,
+					GraduateSchool,
+					Remark,
+                    OutList,
+                    SignId,
+                    Photo,
+					OrderID
+			,DefaultLogin) values(
+					@_AutoID,
+					@_UserName,
+					@_OrgCode,
+					@_CreateTime,
+					@_UpdateTime,
+					@_IsDel,
+					@EmployeeCode,
+					@EmployeeName,
+					@SysUser,
+					@UserType,
+                    @LoginName,
+                    @LoginPass,
+                    @IsLocked,
+                    @LockReason,
+					@Sex,
+					@Birthday,
+					@Nationality,
+					@Marriage,
+					@IDcard,
+					@SID,
+					@Address,
+					@City,
+					@ZipCode,
+					@EmployeeType,
+					@EmployeeState,
+					@EMail,
+					@Homephone,
+					@Cellphone,
+					@Officephone,
+					@GraduateSchool,
+					@Remark,
+                    @OutList,
+                    @SignId,
+                    @Photo,
+					@OrderID
+			,@DefaultLogin),禁止在 .NET Framework 中执行用户代码。启用 "clr enabled" 配置选项。
+语句已终止。,参数列表：@_AutoID=a59a48d2-7890-405b-bc00-fb2e8996b929@_UserName=@_OrgCode=@_CreateTime=2017/12/16 16:38:18@_UpdateTime=2017/12/16 16:38:18@_IsDel=0@EmployeeCode=100001@EmployeeName=刘备@SysUser=0@UserType=@LoginName=100001@LoginPass=BrEzi6Aq3StdLaZ2Y7Gevg==@IsLocked=否@LockReason=@Sex=男@Birthday=@Nationality=@Marriage=@IDcard=@SID=@Address=@City=@ZipCode=@EmployeeType=正式@EmployeeState=在职@EMail=@Homephone=@Cellphone=@Officephone=@GraduateSchool=@Remark=@OutList=@SignId=@Photo=@OrderID=0@DefaultLogin= 
+[17:02:12]|Error|发生错误 ExecuteScalar:IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'dbo.[物资内部调拨单（出库）]') AND type in (N'U')) 
+                select count(*) from 物资内部调拨单（出库） 
+                else 
+                select 0,“（”附近有语法错误。 

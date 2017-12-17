@@ -1,0 +1,1414 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <_AutoID>0CB6037D-598F-418C-BBF6-CC3A041C76F2</_AutoID>
+    <_UserName />
+    <_OrgCode />
+    <_CreateTime>2012-09-20</_CreateTime>
+    <_UpdateTime>2012-09-20</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>BB4D6FF4-9711-4357-A521-AF6B6613F38A</RelationID>
+    <RelationName>人员数据范围授权</RelationName>
+    <RelationTree>4</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>*,*</RelationUIWidth>
+    <AppUrl1>DataLimitDeptTree.aspx?personid={personId}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>EB206D90-D6EA-4BAC-B6C4-F28AC07CD06C</_AutoID>
+    <_UserName />
+    <_OrgCode />
+    <_CreateTime>2012-09-20</_CreateTime>
+    <_UpdateTime>2012-09-20</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>C2661DED-2FBB-47CF-8269-F63D5E3C5D58</RelationID>
+    <RelationName>角色数据范围授权</RelationName>
+    <RelationTree>6</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>*,*</RelationUIWidth>
+    <AppUrl1>DataLimitDeptTree.aspx?RoleID={RoleID}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>1BA5222B-6F85-4091-AD84-740ED4F843E3</_AutoID>
+    <_UserName />
+    <_OrgCode />
+    <_CreateTime>2012-09-20</_CreateTime>
+    <_UpdateTime>2012-09-20</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>1E5E6448-21D7-4D3F-A5CC-4E4B306FD687</RelationID>
+    <RelationName>岗位数据范围授权</RelationName>
+    <RelationTree>3</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>*,*</RelationUIWidth>
+    <AppUrl1>DataLimitDeptTree.aspx?PositionID={PositionID}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>2B874AEF-70B8-40B6-AD2C-B830A7E7A25C</_AutoID>
+    <_UserName />
+    <_OrgCode />
+    <_CreateTime>2012-09-20</_CreateTime>
+    <_UpdateTime>2012-09-20</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>4FBE5F3B-949C-4D34-9BB9-E7F22E333564</RelationID>
+    <RelationName>部门数据范围授权</RelationName>
+    <RelationTree>2</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>*,*</RelationUIWidth>
+    <AppUrl1>DataLimitDeptTree.aspx?DeptID={DeptID}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+
+  <Table>
+    <_AutoID>A5001652-88B1-4AE5-B072-1FE07568B5AA</_AutoID>
+    <_UserName />
+    <_OrgCode />
+    <_CreateTime>2012-09-20</_CreateTime>
+    <_UpdateTime>2012-09-20</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>E1A26D93-64B8-4451-A946-79E8136AAE82</RelationID>
+    <RelationName>人员项目数据范围授权</RelationName>
+    <RelationTree>4</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>*,*</RelationUIWidth>
+    <AppUrl1>ProjectDataLimitProjectList.aspx?personid={personId}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>DFEDEAE1-BAEA-40E9-AB54-5E809E2726F2</_AutoID>
+    <_UserName />
+    <_OrgCode />
+    <_CreateTime>2012-09-20</_CreateTime>
+    <_UpdateTime>2012-09-20</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>4CDBBB53-6747-489E-850F-4071FAD9742A</RelationID>
+    <RelationName>角色项目数据范围授权</RelationName>
+    <RelationTree>6</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>*,*</RelationUIWidth>
+    <AppUrl1>ProjectDataLimitProjectList.aspx?RoleID={RoleID}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>E3CDB376-5155-42A2-AFBF-87EC0F80C253</_AutoID>
+    <_UserName />
+    <_OrgCode />
+    <_CreateTime>2012-09-20</_CreateTime>
+    <_UpdateTime>2012-09-20</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>FD3AB4BD-4526-4E07-9232-DD21B3F53714</RelationID>
+    <RelationName>岗位项目数据范围授权</RelationName>
+    <RelationTree>3</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>*,*</RelationUIWidth>
+    <AppUrl1>ProjectDataLimitProjectList.aspx?PositionID={PositionID}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>E70C1ADA-CF6C-4F9B-B8EA-0406DF34E945</_AutoID>
+    <_UserName />
+    <_OrgCode />
+    <_CreateTime>2012-09-20</_CreateTime>
+    <_UpdateTime>2012-09-20</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>291F4DE7-7A10-47A0-81CA-EFF13DB724F3</RelationID>
+    <RelationName>部门项目数据范围授权</RelationName>
+    <RelationTree>2</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>*,*</RelationUIWidth>
+    <AppUrl1>ProjectDataLimitProjectList.aspx?DeptID={DeptID}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+
+  <Table>
+    <_AutoID>A0131910-0C70-4319-A102-4F9487C60663</_AutoID>
+    <_UserName />
+    <_OrgCode />
+    <_CreateTime>2012-10-02</_CreateTime>
+    <_UpdateTime>2012-10-02</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>1EA09A0F-CA83-44F2-A4A7-1CB5836AE690</RelationID>
+    <RelationName>单位信息设置</RelationName>
+    <RelationTree>1</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>*,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_E_Org_Department&amp;sindex=1&amp;T_E_Org_Departmentcpro=DeptPWBS={DeptWBS}^1|DeptWBS={DeptWBS}^0&amp;condition=DeptPWBS=%27{DeptWBS}%27 and TypeID in (select _AutoID from  T_E_Org_DeptType where TypeProp in (%270%27,%271%27)) </AppUrl1>
+    <AppUrl2>../../SysFolder/AppFrame/AppList.aspx?tblName=T_E_Org_Department&amp;sindex=1&amp;T_E_Org_Departmentcpro=DeptPWBS=0^1|DeptWBS=0^0&amp;condition=DeptPWBS=%270%27 and TypeID in (select _AutoID from  T_E_Org_DeptType where TypeProp in (%270%27,%271%27))</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <!--平台字段可以忽略-->
+    <_AutoID>AF67D6BD-3220-4C26-BEA0-0CFD84EF8FC5</_AutoID>
+    <_UserName />
+    <_OrgCode />
+    <_CreateTime>2012-10-02</_CreateTime>
+    <_UpdateTime>2012-10-02</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <!--关联页面ID-->
+    <RelationID>CDE4F66A-50D4-4EB6-877E-4BC57C181A73</RelationID>
+    <!--关联页面名称-->
+    <RelationName>部门信息设置</RelationName>
+    <!--关联页面树的类型：单位树|1,部门树|2,岗位树|3,部门人员树|4,角色人员树|5,部门角色树|6-->
+    <RelationTree>2</RelationTree>
+    <!--关联页面结构的类型：左树右列表|1,左列表右树|2-->
+    <RelationUIType>1</RelationUIType>
+    <!--关联页面结构的宽度：-->
+    <RelationUIWidth>*,*</RelationUIWidth>
+    <!--关联页面列表的链接-->
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_E_Org_Department&amp;T_E_Org_Departmentcpro=DeptPWBS={DeptWBS}^1|DeptWBS={DeptWBS}^0&amp;condition=DeptPWBS=%27{DeptWBS}%27</AppUrl1>
+    <!--关联页面列表的初始化的链接，未点击树节点时显示的页面-->
+    <AppUrl2>../../SysFolder/AppFrame/AppList.aspx?tblName=T_E_Org_Department&amp;T_E_Org_Departmentcpro=DeptPWBS=0^1|DeptWBS=0^0&amp;condition=DeptPWBS=%270%27</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>  
+  <Table>
+    <_AutoID>5183f9cf-7e8d-4b60-a0cc-813ca60bb4dc</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-09-17T16:08:39+08:00</_CreateTime>
+    <_UpdateTime>2012-10-14T10:00:59+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>4721a618-30f7-44e6-92e7-32ea635ff394</RelationID>
+    <RelationName> 家庭成员信息维护</RelationName>
+    <RelationTree>4</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>20%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_HR_person_family&amp;T_HR_person_familycpro=personId={_AutoID}^1|personName={EmployeeName}^1|personCode={EmployeeCode}^1|personGender={Sex}^1|idCard={IDcard}^1|Birthday={Birthday}^1|CompName={compname}^1|CompID={compid}^1&amp;condition=personId=%27{_AutoID}%27</AppUrl1>
+    <AppUrl2>../../SysFolder/AppFrame/AppList.aspx?tblName=T_HR_person_family</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>4c2e0ba4-091b-4909-9ee1-a8e21d4aac7a</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-09-19T22:35:45+08:00</_CreateTime>
+    <_UpdateTime>2012-10-02T11:28:53+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>2543f81c-788a-4e36-adab-76b5901fdc07</RelationID>
+    <RelationName>部门工资统计</RelationName>
+    <RelationTree>2</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppQuery.aspx?tblName=Q_HR_zhfx_bmgztj&amp;defqueryvalue=~deptID={_AutoID}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>145b3e0e-513e-4fb7-b9d5-6342275f9d7c</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-09-20T22:55:37+08:00</_CreateTime>
+    <_UpdateTime>2012-12-14T18:35:40+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>ffb39c61-c3b9-4ca5-bdba-ec323714ba35</RelationID>
+    <RelationName> 人员花名册信息</RelationName>
+    <RelationTree>2</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>300,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppQuery.aspx?tblName=emp_report_empinfo</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>9b49de51-8741-45bb-a3f1-b79d37fef872</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-10-06T22:10:29+08:00</_CreateTime>
+    <_UpdateTime>2013-03-20T13:16:02+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>8ec6515d-ab43-4c9c-a3a3-ff4a1b30d03e</RelationID>
+    <RelationName>奖励编制</RelationName>
+    <RelationTree>2</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=Q_HR_xcfl_jjffbz&amp;condition=deptID=%27{_AutoID}%27</AppUrl1>
+    <AppUrl2>../../SysFolder/AppFrame/AppList.aspx?tblName=Q_HR_xcfl_jjffbz&amp;condition=1=2</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>0e297071-098c-4d44-bd8c-30ef274c4940</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-10-13T11:06:47+08:00</_CreateTime>
+    <_UpdateTime>2013-03-20T13:05:03+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>e70d92a3-a183-464b-af78-35bf6b111d75</RelationID>
+    <RelationName> 人员基本信息录入（左岗位)</RelationName>
+    <RelationTree>3</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>25%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_E_Org_Employee&amp;sindex=3&amp;T_E_Org_Employeecpro=compname={CompanyName}^1|compid={CompanyId}^1|DeptName={DeptName}^1|DeptID={DeptID}^1|PositionName={PositionName}^1|PositionID={PositionID}^1|UserType=在册人员^1&amp;condition=PositionID=%27{PositionID}%27 and UserType=%27在册人员%27</AppUrl1>
+    <AppUrl2>../../welcome.htm</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>d3d59864-9df0-45a2-8915-08081592a268</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-10-25T14:14:19+08:00</_CreateTime>
+    <_UpdateTime>2012-10-25T14:28:21+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>bd79a442-d083-4ac4-bd13-a32dcfe84e14</RelationID>
+    <RelationName> 人员基本信息录入（左部门)</RelationName>
+    <RelationTree>2</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../workasp/Personal/CompanyEmployeeList.aspx?deptid={DeptID}&amp;condition=deptid=%27{DeptID}%27</AppUrl1>
+    <AppUrl2> ../../welcome.htm</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>ca7730b3-6328-41e6-b797-879ec85af041</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-02T20:48:28+08:00</_CreateTime>
+    <_UpdateTime>2012-12-03T09:41:06+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>df07e5f1-eb07-43c6-90b9-9c5d1a4bbf36</RelationID>
+    <RelationName>物资分类维护</RelationName>
+    <RelationTree>7</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_Basic_MaterialsClassify&amp;T_SG_Basic_MaterialsClassifycpro=classpcode={classcode}^1&amp;Condition=classpcode=%27{classcode}%27</AppUrl1>
+    <AppUrl2>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_Basic_MaterialsClassify&amp;T_SG_Basic_MaterialsClassifycpro=classpcode=0^1&amp;Condition=classpcode=%270%27</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>d8c28734-506a-42bf-9c25-5a44ee284701</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-02T21:55:41+08:00</_CreateTime>
+    <_UpdateTime>2012-12-06T14:12:45+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>e474d252-e365-425e-b590-6b335d8ae6f6</RelationID>
+    <RelationName>周转材料分类维护</RelationName>
+    <RelationTree>8</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_Basic_SupMaterialsClassify&amp;T_SG_Basic_SupMaterialsClassifycpro=classpcode={classcode}^1&amp;Condition=classpcode=%27{classcode}%27</AppUrl1>
+    <AppUrl2>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_Basic_SupMaterialsClassify&amp;T_SG_Basic_SupMaterialsClassifycpro=classpcode=0^1&amp;Condition=classpcode=%270%27</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>3039ebe9-3077-4c5e-a3b7-2276ef22615b</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-02T22:03:09+08:00</_CreateTime>
+    <_UpdateTime>2012-12-26T10:41:13+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>4bccf677-4e4e-4597-9a78-bc37c9424d5a</RelationID>
+    <RelationName>设备分类维护</RelationName>
+    <RelationTree>9</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_Basic_EquipmentClassify&amp;T_SG_Basic_EquipmentClassifycpro=classpcode={classcode}^1&amp;Condition=classpcode=%27{classcode}%27</AppUrl1>
+    <AppUrl2>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_Basic_EquipmentClassify&amp;T_SG_Basic_EquipmentClassifycpro=classpcode=0^1&amp;Condition=classpcode=%270%27</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>d8a0f352-5636-42cb-b720-804d221a8855</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-02T23:15:16+08:00</_CreateTime>
+    <_UpdateTime>2012-12-06T14:29:23+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>9660bb3c-f1dd-493b-9738-ea8473939253</RelationID>
+    <RelationName>物资编码维护</RelationName>
+    <RelationTree>7</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_Basic_MaterialsInfo&amp;T_SG_Basic_MaterialsInfocpro=ClassCode={classcode}^1&amp;Condition=ClassCode like %27{classcode}%%27</AppUrl1>
+    <AppUrl2>../../welcome.htm</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>53075009-2b45-41ae-b804-566803614023</_AutoID>
+    <_UserName>sysadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-03T11:22:22+08:00</_CreateTime>
+    <_UpdateTime>2012-12-03T14:07:49+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>6970bc8e-abf5-452c-8ab3-5c7ce0f28e22</RelationID>
+    <RelationName> 周转材信息维护</RelationName>
+    <RelationTree>8</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_Basic_SupMaterialsInfo&amp;T_SG_Basic_SupMaterialsInfocpro=classwbs={classcode}^1&amp;Condition=classwbs=%27{classcode}%27</AppUrl1>
+    <AppUrl2> ../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_Basic_SupMaterialsInfo&amp;T_SG_Basic_SupMaterialsInfocpro=classwbs=0^1&amp;Condition=classwbs=%270%27</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>056ed249-39cc-4a4c-af64-14b608c6f533</_AutoID>
+    <_UserName>sysadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-04T09:34:45+08:00</_CreateTime>
+    <_UpdateTime>2012-12-06T17:34:15+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>859e980c-0cb2-401d-a819-ac72238b0577</RelationID>
+    <RelationName> 材料供应商类别</RelationName>
+    <RelationTree>18</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_BC_SupplierType&amp;T_BC_SupplierTypecpro=lbpcode={lbcode}^1&amp;Condition=lbpcode=%27{lbcode}%27</AppUrl1>
+    <AppUrl2> ../../SysFolder/AppFrame/AppList.aspx?tblName=T_BC_SupplierType&amp;T_BC_SupplierTypecpro=lbpcode=0^1&amp;Condition=lbpcode=%270%27</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>ca09eedf-0cac-4aa7-b9b2-645c37a18c40</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-04T14:32:48+08:00</_CreateTime>
+    <_UpdateTime>2012-12-06T15:44:17+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>d717deab-dc24-42b8-8c12-5da08294fe78</RelationID>
+    <RelationName>按档案分类检索</RelationName>
+    <RelationTree>11</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>20%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppQuery.aspx?tblName=T_OA_DA_ArchiveInfo_All&amp;Condition=Catalog=%27{FolderName}%27</AppUrl1>
+    <AppUrl2>../../welcome.htm</AppUrl2>
+  </Table>
+  <Table>
+    <_AutoID>6acba629-4d6c-469c-8c2e-e843c49f9ca7</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-04T15:11:24+08:00</_CreateTime>
+    <_UpdateTime>2012-12-06T15:44:07+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>08401450-1b7b-4849-bb53-87efcbd1be1b</RelationID>
+    <RelationName>按存放位置检索</RelationName>
+    <RelationTree>12</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>20%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppQuery.aspx?tblName=T_OA_DA_ArchiveInfo_All&amp;Condition=Location=%27{FolderName}%27</AppUrl1>
+    <AppUrl2>../../welcome.htm</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>a09e7e4c-e335-416b-993d-581f68c91df0</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-04T23:24:38+08:00</_CreateTime>
+    <_UpdateTime>2012-12-04T23:24:38+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>0137c2da-1a31-47f6-b2dd-c29b02b9775e</RelationID>
+    <RelationName> 资金类别编码</RelationName>
+    <RelationTree>20</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_BC_CapitalClassify&amp;T_BC_CapitalClassifycpro=classpcode={classcode}^1&amp;Condition=classpcode=%27{classcode}%27</AppUrl1>
+    <AppUrl2>../../SysFolder/AppFrame/AppList.aspx?tblName=T_BC_CapitalClassify&amp;T_BC_CapitalClassifycpro=classpcode=0^1&amp;Condition=classpcode=%270%27</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>7fc7f90f-7d6f-4ebe-a047-38ee7a693aa2</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-05T13:55:29+08:00</_CreateTime>
+    <_UpdateTime>2012-12-05T13:55:53+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>d96e4df2-4bf5-4e80-b5b1-79efd9b361ab</RelationID>
+    <RelationName>帐号资金初始化</RelationName>
+    <RelationTree>20</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_BC_CapitalClassify&amp;Sindex=1&amp;T_BC_CapitalClassifycpro=classpcode={classcode}^1&amp;Condition=classpcode=%27{classcode}%27</AppUrl1>
+    <AppUrl2>../../SysFolder/AppFrame/AppList.aspx?tblName=T_BC_CapitalClassify&amp;Sindex=1&amp;T_BC_CapitalClassifycpro=classpcode=0^1&amp;Condition=classpcode=%270%27</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>b2257d89-e391-428d-9214-6d9699084e98</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-05T15:08:01+08:00</_CreateTime>
+    <_UpdateTime>2012-12-05T15:08:01+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>991fa276-f6ef-4f60-a1ae-64a16cd5c736</RelationID>
+    <RelationName>成本科目编码维护</RelationName>
+    <RelationTree>10</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_Basic_CostAccountClassify&amp;T_SG_Basic_CostAccountClassifycpro=classpcode={classcode}^1&amp;Condition=classpcode=%27{classcode}%27</AppUrl1>
+    <AppUrl2>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_Basic_CostAccountClassify&amp;T_SG_Basic_CostAccountClassifycpro=classpcode=0^1&amp;Condition=classpcode=%270%27</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>470ac2e4-2bab-4766-9f64-d0144d1d9b67</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-05T15:10:59+08:00</_CreateTime>
+    <_UpdateTime>2012-12-05T15:10:59+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>b704000a-e097-4eb7-ad6b-ca5103594d69</RelationID>
+    <RelationName>预算科目分类编码维护</RelationName>
+    <RelationTree>19</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_Basic_BudgetCostAccountClassify&amp;T_SG_Basic_BudgetCostAccountClassifycpro=classpcode={classcode}^1&amp;Condition=classpcode=%27{classcode}%27</AppUrl1>
+    <AppUrl2>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_Basic_BudgetCostAccountClassify&amp;T_SG_Basic_BudgetCostAccountClassifycpro=classpcode=0^1&amp;Condition=classpcode=%270%27</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>89f1b8b6-0c58-4c01-b9d2-684b5e52b537</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-05T15:37:45+08:00</_CreateTime>
+    <_UpdateTime>2012-12-16T18:22:52+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>cfd8ca7f-520d-44ee-8719-ebf445ecff5e</RelationID>
+    <RelationName>预算科目编码维护</RelationName>
+    <RelationTree>19</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_Basic_BudgetCostAccountInfo&amp;T_SG_Basic_BudgetCostAccountInfocpro=classcode={classcode}^1&amp;Condition=classcode like %27{classcode}%%27</AppUrl1>
+    <AppUrl2>../../welcome.htm</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>4c687ec4-f200-4e39-8f11-1dc7a7c6df74</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-05T15:54:33+08:00</_CreateTime>
+    <_UpdateTime>2012-12-05T15:54:33+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>138febab-fbee-4137-846b-9d1d24831554</RelationID>
+    <RelationName>办公用品信息编码维护</RelationName>
+    <RelationTree>17</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_OA_BGYP_Info&amp;T_OA_BGYP_Infocpro=WzType={caption}^1&amp;Condition=WzType=%27{caption}%27</AppUrl1>
+    <AppUrl2>../../SysFolder/AppFrame/AppList.aspx?tblName=T_OA_BGYP_Info</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>179ac008-b1d3-4032-a35b-cb3636d47162</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-06T07:43:26+08:00</_CreateTime>
+    <_UpdateTime>2012-12-06T07:43:26+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>6da9c26d-050b-4715-aaf2-4563bc0ced2d</RelationID>
+    <RelationName>日常费用分类编码维护</RelationName>
+    <RelationTree>21</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_BC_DailyExpenseClassify&amp;T_BC_DailyExpenseClassifycpro=classpcode={classcode}^1&amp;Condition=classpcode=%27{classcode}%27</AppUrl1>
+    <AppUrl2>../../SysFolder/AppFrame/AppList.aspx?tblName=T_BC_DailyExpenseClassify&amp;T_BC_DailyExpenseClassifycpro=classpcode=0^1&amp;Condition=classpcode=%270%27</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>8085e2ed-22ce-4dfc-9bfe-18c895cb054a</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-06T07:46:25+08:00</_CreateTime>
+    <_UpdateTime>2012-12-06T07:49:29+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>c65104b3-a6bc-4260-8e31-19d107f13b3e</RelationID>
+    <RelationName>日常费用科目编码维护</RelationName>
+    <RelationTree>21</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_BC_DailyExpenseInfo&amp;T_BC_DailyExpenseInfocpro=ClassCode={classcode}^1&amp;Condition=ClassCode=%27{classcode}%27</AppUrl1>
+    <AppUrl2>../../welcome.htm</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>516a46e2-c53d-4b92-b425-2b3339b8670b</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-06T08:23:38+08:00</_CreateTime>
+    <_UpdateTime>2012-12-06T08:35:25+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>07991729-05e0-47a1-90b1-d0407a0fbf0c</RelationID>
+    <RelationName>设备信息编码维护</RelationName>
+    <RelationTree>9</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_Basic_EquipmentInfo&amp;T_SG_Basic_EquipmentInfocpro=ClassCode={classcode}^1|ClassName={classname}^1&amp;Condition=ClassCode like %27{classcode}%%27</AppUrl1>
+    <AppUrl2>../../welcome.htm</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>77e84f87-c76e-4a0f-8ea2-6f6360b5f2ca</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-06T14:17:27+08:00</_CreateTime>
+    <_UpdateTime>2012-12-06T14:17:27+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>5b8ccf36-3026-4649-b3cf-eb0b1a2bb7dd</RelationID>
+    <RelationName>周转材料编码维护</RelationName>
+    <RelationTree>8</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_Basic_SupMaterialsInfo&amp;T_SG_Basic_SupMaterialsInfocpro=classwbs={classcode}^1&amp;Condition=classwbs=%27{classcode}%27</AppUrl1>
+    <AppUrl2>../../welcome.htm</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>0d9748d6-be99-4cb1-9172-1257d58817eb</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-07T09:34:57+08:00</_CreateTime>
+    <_UpdateTime>2012-12-07T09:50:56+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>8a456f17-4325-474b-bb87-ca85d47fe5f2</RelationID>
+    <RelationName>按国标分类检索</RelationName>
+    <RelationTree>13</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppQuery.aspx?tblName=T_OA_DA_ArchiveInfo_All&amp;Condition=GBTName=%27{FolderName}%27</AppUrl1>
+    <AppUrl2>../../welcome.htm</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>8cce9e70-7a48-4944-81cc-07524f8577e5</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-07T09:59:11+08:00</_CreateTime>
+    <_UpdateTime>2012-12-07T09:59:11+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>3321c0b9-f30a-4ba4-a5bc-4da502ae6edf</RelationID>
+    <RelationName>按重大项目分类</RelationName>
+    <RelationTree>14</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppQuery.aspx?tblName=T_OA_DA_ArchiveInfo_All&amp;Condition=DATName=%27{FolderName}%27</AppUrl1>
+    <AppUrl2>../../welcome.htm</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>fa8147e4-59ad-4965-9173-137663ef6246</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-07T10:31:59+08:00</_CreateTime>
+    <_UpdateTime>2012-12-07T10:31:59+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>8dd99e9d-0905-4b33-b089-0c3d29d60e06</RelationID>
+    <RelationName>按WBS结构检索</RelationName>
+    <RelationTree>15</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppQuery.aspx?tblName=T_OA_DA_ArchiveInfo_All&amp;Condition=ProjectWBSName=%27{FolderName}%27</AppUrl1>
+    <AppUrl2>../../welcome.htm</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>02ef42f0-829f-4942-9ba7-70158524cb80</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-07T10:36:38+08:00</_CreateTime>
+    <_UpdateTime>2012-12-07T15:41:57+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>aef41d0c-2d8c-40d0-af17-768e57be6d79</RelationID>
+    <RelationName>按流程分类检索</RelationName>
+    <RelationTree>16</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>20%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppQuery.aspx?tblName=T_OA_DA_ArchiveInfo_alcfl&amp;Condition=CatalogName=%27{FolderName}%27</AppUrl1>
+    <AppUrl2>../../welcome.htm</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>93e43545-5870-4116-8511-432c16d098ca</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-11T17:43:15+08:00</_CreateTime>
+    <_UpdateTime>2012-12-11T21:47:48+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>683212b0-5bc4-405b-b1f8-2f68dedbcb27</RelationID>
+    <RelationName>综合业务节点定义</RelationName>
+    <RelationTree>22</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppDefault.aspx?tblName=T_E_App_IntegratedPageInfo&amp;Sindex=1&amp;T_E_App_IntegratedPageInfocpro=classpcode={classcode}^1&amp;Condition=classpcode=%27{classcode}%27</AppUrl1>
+    <AppUrl2>../../SysFolder/AppFrame/AppDefault.aspx?tblName=T_E_App_IntegratedPageInfo&amp;T_E_App_IntegratedPageInfocpro=classpcode=0^1&amp;Condition=classpcode=%270%27</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>d6c1b3e9-f02f-4879-a74b-01e823a7ea27</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-14T15:42:34+08:00</_CreateTime>
+    <_UpdateTime>2012-12-14T15:42:34+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>fa7be05e-34e5-4101-b55a-3aa611ceeba6</RelationID>
+    <RelationName>单位工程维护</RelationName>
+    <RelationTree>23</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_Basic_UnitProjectInfo&amp;T_SG_Basic_UnitProjectInfocpro=projectname={projectname}^1|projectcode={projectcode}^1|projectid={projectid}^1&amp;Condition=projectid=%27{projectid}%27</AppUrl1>
+    <AppUrl2>../../welcome.htm</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>43bd5ee2-8fc8-47da-b9d7-c6235935849e</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-14T16:44:54+08:00</_CreateTime>
+    <_UpdateTime>2012-12-16T14:21:06+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>0065a665-4f2e-465d-ba42-73f0390d1246</RelationID>
+    <RelationName>分包工程维护</RelationName>
+    <RelationTree>24</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_Basic_InviteBidProjectInfo&amp;T_SG_Basic_InviteBidProjectInfocpro=ProjectName={projectname}^1|ProjectCode={projectcode}^1|ProjectID={projectid}^1|unitprojectname={unitprojectname}^1|unitprojectcode={unitprojectcode}^1|unitprojectid={unitprojectid}^1&amp;Condition=unitprojectid=%27{unitprojectid}%27</AppUrl1>
+    <AppUrl2>../../welcome.htm</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>8550124b-54e0-4013-8773-c254866d2d31</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-14T20:33:09+08:00</_CreateTime>
+    <_UpdateTime>2012-12-14T20:57:28+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>8eb290ec-1e22-4d41-b588-7e6f511a71a3</RelationID>
+    <RelationName>测试关联页面定义</RelationName>
+    <RelationTree>1</RelationTree>
+    <RelationUIType>6</RelationUIType>
+    <RelationUIWidth>40%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppQuery.aspx?tblname=Q_SG_ProjectList_Unit</AppUrl1>
+    <AppUrl2>../../welcome.htm</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>f3c92edd-77ed-4731-b12f-31dc4d61b971</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-14T22:58:30+08:00</_CreateTime>
+    <_UpdateTime>2012-12-15T16:05:43+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>0debb947-92bc-4c08-b881-06333dbb9025</RelationID>
+    <RelationName>成本预算-材料预算</RelationName>
+    <RelationTree />
+    <RelationUIType>4</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../WorkAsp/BudgetCost/MaterialBudgetCost_ProjectUnitBidTree.aspx?a=1</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>2b94959a-a99b-4d19-899c-c5b2d4efb2a1</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-14T23:09:28+08:00</_CreateTime>
+    <_UpdateTime>2012-12-14T23:09:28+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>e9e4de2e-a28c-450c-998e-af4250fa96c6</RelationID>
+    <RelationName>成本预算-材料预算-按项目做</RelationName>
+    <RelationTree>23</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_BudgetCost_Procurement&amp;T_SG_BudgetCost_Procurementcpro=projectname={projectname}^1|projectcode={projectcode}^1|projectid={projectid}^1|UnitProjectid=^1|BidProjectID=^1&amp;Condition=projectid=%27{projectid}%27</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>250029e2-9416-497a-98b9-3c523d8259da</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-15T00:07:40+08:00</_CreateTime>
+    <_UpdateTime>2012-12-15T00:07:40+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>4c1f1197-10b1-4c94-a07e-73384102e8d7</RelationID>
+    <RelationName>成本预算-材料预算-按单位工程</RelationName>
+    <RelationTree>24</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_BudgetCost_Procurement&amp;T_SG_BudgetCost_Procurementcpro=projectname={projectname}^1|projectcode={projectcode}^1|projectid={projectid}^1|UnitProjectid={unitprojectid}^1|UnitProjectCode={unitprojectcode}^1|UnitProjectName={unitprojectname}^1|BidProjectName=^1|BidProjectID=^1|BidProjectCode^1&amp;Condition=UnitProjectid=%27{unitprojectid}%27</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>b1978f0d-2ccb-49f5-b1d5-1d3928c19e68</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-15T00:14:32+08:00</_CreateTime>
+    <_UpdateTime>2012-12-15T00:47:04+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>8418da99-eec6-49d9-bc4c-1a210cc62ea3</RelationID>
+    <RelationName>成本预算-材料预算-按分部分项</RelationName>
+    <RelationTree>25</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_BudgetCost_Procurement&amp;T_SG_BudgetCost_Procurementcpro=projectname={ProjectName}^1|projectcode={ProjectCode}^1|projectid={ProjectID}^1|UnitProjectid={unitprojectid}^1|UnitProjectCode={unitprojectcode}^1|UnitProjectName={unitprojectname}^1|BidProjectName={BidName}^1|BidProjectID={BidID}^1|BidProjectCode={BidCode}^1&amp;Condition=BidProjectID=%27{BidID}%27</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>477e0e76-6c09-46c9-901b-30e4330a82b5</_AutoID>
+    <_UserName>sysadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-26T10:38:09+08:00</_CreateTime>
+    <_UpdateTime>2012-12-26T10:38:09+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>70ed93ff-8031-4f79-bd27-cf88b803d478</RelationID>
+    <RelationName>价格趋势分析</RelationName>
+    <RelationTree>9</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_Equipment_HYZDJG&amp;T_SG_Equipment_HYZDJGcpro=classpcode={classcode}^1&amp;Condition=classpcode=%27{classcode}%27</AppUrl1>
+    <AppUrl2>../../SysFolder/AppFrame/AppList.aspx?tblName=T_SG_Equipment_HYZDJG&amp;T_SG_Equipment_HYZDJGcpro=classpcode=0^1&amp;Condition=classpcode=%270%27</AppUrl2>
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>6d1fa8e2-1805-43d7-9833-0b1141194ec0</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2012-12-26T15:07:52+08:00</_CreateTime>
+    <_UpdateTime>2012-12-26T15:19:54+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>639910a3-9e38-4c0e-be47-69fc71e8df9c</RelationID>
+    <RelationName>物质(材料)选择框架</RelationName>
+    <RelationTree>7</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=Q_Material_List</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>b53ce6da-fb2d-4097-8306-b948d8fd6a99</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2013-02-26T16:33:24+08:00</_CreateTime>
+    <_UpdateTime>2013-02-26T16:33:24+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>f8cfdc57-e9e4-4276-9b2d-ecd3a79d2272</RelationID>
+    <RelationName>成本编码</RelationName>
+    <RelationTree>11</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../welcome.htm</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>f5157502-6445-427d-a78b-e2c0fa704b7e</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2013-03-08T10:57:06+08:00</_CreateTime>
+    <_UpdateTime>2013-03-08T15:44:17+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>72c6b92e-d4f4-4f32-872a-3fb83595e615</RelationID>
+    <RelationName>分部分项成本分析</RelationName>
+    <RelationTree>24</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../SysFolder/AppFrame/AppList.aspx?tblName=Q_CPM_Cost_ssdbfx_fbfx&amp;Condition=prjobjid=%27{_AutoID}%27</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>5ae74254-c512-4cb7-b244-bcf5ee7fbe68</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2013-04-11T15:32:30+08:00</_CreateTime>
+    <_UpdateTime>2013-04-11T15:32:30+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>f26eec4a-17b2-4a71-abe5-21fb97b885a8</RelationID>
+    <RelationName>项目人员授权</RelationName>
+    <RelationTree>4</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1 />
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>9dc1b81c-5cdd-4bd9-a6b6-60096dabf516</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2013-04-13T10:50:47+08:00</_CreateTime>
+    <_UpdateTime>2013-04-13T21:22:25+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>b1f4ceb8-9df9-4752-889d-6a0eaf1169b8</RelationID>
+    <RelationName>设置预算科目与物资信息成本归集关系</RelationName>
+    <RelationTree>26</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../WorkAsp/BudgetCost/CostAccumulationMaterials.aspx?BudgetCAName={BudgetCAName}&amp;BudgetCACode={BudgetCACode}&amp;BudgetCAID={BudgetCAID}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>c58eadfc-273b-42a1-addb-eeafdcf1b356</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2013-04-13T22:06:21+08:00</_CreateTime>
+    <_UpdateTime>2013-04-13T22:06:21+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>2f675190-f66b-4c6a-99f2-1a9825f8ba43</RelationID>
+    <RelationName>设置预算科目与设备信息成本归集关系</RelationName>
+    <RelationTree>26</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../WorkAsp/BudgetCost/CostAccumulationEquipment.aspx?BudgetCAName={BudgetCAName}&amp;BudgetCACode={BudgetCACode}&amp;BudgetCAID={BudgetCAID}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>faaf3a58-3a6a-4849-b774-a1d48ac5e799</_AutoID>
+    <_UserName>superadmin</_UserName>
+    <_OrgCode />
+    <_CreateTime>2013-04-13T22:45:04+08:00</_CreateTime>
+    <_UpdateTime>2013-04-13T22:45:04+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>e5f3183d-1c7e-460d-9fe0-86bff8b7e6d3</RelationID>
+    <RelationName>设置预算科目与周转材信息成本归集关系</RelationName>
+    <RelationTree>26</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../WorkAsp/BudgetCost/CostAccumulationSupMaterials.aspx?BudgetCAName={BudgetCAName}&amp;BudgetCACode={BudgetCACode}&amp;BudgetCAID={BudgetCAID}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>8fb6a7c9-0830-443f-9f5c-f06a9d21c423</_AutoID>
+    <_UserName>mijunxi</_UserName>
+    <_OrgCode />
+    <_CreateTime>2013-05-09T09:40:08+08:00</_CreateTime>
+    <_UpdateTime>2013-05-09T13:08:04+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>0116d0df-a9ad-4247-a0f8-d63e1d9e23c0</RelationID>
+    <RelationName>配置项目-物资使用范围</RelationName>
+    <RelationTree>23</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../WorkAsp/BudgetCost/ProjectMaterialsRefScope.aspx?ProjectID={projectid}&amp;ProjectCode={projectcode}&amp;ProjectName={projectname}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>31390bcd-f1cc-4daa-9170-bf5e27512fc1</_AutoID>
+    <_UserName>mijunxi</_UserName>
+    <_OrgCode />
+    <_CreateTime>2013-05-09T09:50:57+08:00</_CreateTime>
+    <_UpdateTime>2013-05-09T13:08:32+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>d03d44a0-7638-47cc-98c0-b54ae639aedc</RelationID>
+    <RelationName>配置项目-设备使用范围</RelationName>
+    <RelationTree>23</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../WorkAsp/BudgetCost/ProjectEquipmentRefScope.aspx?ProjectID={projectid}&amp;ProjectCode={projectcode}&amp;ProjectName={projectname}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>e1f5d48c-68ec-4713-af75-99228719ff49</_AutoID>
+    <_UserName>mijunxi</_UserName>
+    <_OrgCode />
+    <_CreateTime>2013-05-09T09:51:15+08:00</_CreateTime>
+    <_UpdateTime>2013-05-09T13:08:44+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>33a265e8-fc30-40c9-a3b5-107b2d031d94</RelationID>
+    <RelationName>配置项目-周转材料范围</RelationName>
+    <RelationTree>23</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../WorkAsp/BudgetCost/ProjectSupMaterialsRefScope.aspx?ProjectID={projectid}&amp;ProjectCode={projectcode}&amp;ProjectName={projectname}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>19cd31f6-574e-4b46-b7c5-2499e471612a</_AutoID>
+    <_UserName>mijunxi</_UserName>
+    <_OrgCode />
+    <_CreateTime>2013-05-09T09:51:31+08:00</_CreateTime>
+    <_UpdateTime>2013-05-09T19:57:50+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>805edf2f-4319-46ad-9b78-972a8a7e6fa6</RelationID>
+    <RelationName>配置项目-供应商范围</RelationName>
+    <RelationTree>23</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../WorkAsp/BudgetCost/ProjectSupplierInfoRefScope.aspx?ProjectID={projectid}&amp;ProjectCode={projectcode}&amp;ProjectName={projectname}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>5f6d62dc-ff5b-4aa3-9e2b-2ab0756debf8</_AutoID>
+    <_UserName>mijunxi</_UserName>
+    <_OrgCode />
+    <_CreateTime>2013-05-09T10:45:42+08:00</_CreateTime>
+    <_UpdateTime>2013-05-09T19:58:42+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>ee9e5cd3-a85f-4a68-af88-2e8be246418d</RelationID>
+    <RelationName>配置项目-分包方范围</RelationName>
+    <RelationTree>23</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>../../WorkAsp/BudgetCost/ProjectSubContractorRefScope.aspx?ProjectID={projectid}&amp;ProjectCode={projectcode}&amp;ProjectName={projectname}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>9826b3c1-c8fb-47c5-a673-268b73ab865e</_AutoID>
+    <_UserName>mijunxi</_UserName>
+    <_OrgCode />
+    <_CreateTime>2013-07-07T22:38:44+08:00</_CreateTime>
+    <_UpdateTime>2013-07-08T08:59:11+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>36e208bf-4d87-4ff1-884a-b46957789c0a</RelationID>
+    <RelationName>人员产品授权</RelationName>
+    <RelationTree>4</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>WebLimitWebList.aspx?personid={personId}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>d6844a51-5ea8-4844-9a1d-bc985fbbc444</_AutoID>
+    <_UserName>mijunxi</_UserName>
+    <_OrgCode />
+    <_CreateTime>2013-07-07T22:39:15+08:00</_CreateTime>
+    <_UpdateTime>2013-07-08T09:01:18+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>41fd77e1-2968-41be-8158-b8034b1b466a</RelationID>
+    <RelationName>角色产品授权</RelationName>
+    <RelationTree>6</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>WebLimitWebList.aspx?RoleID={RoleID}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>3fc4c635-0124-4332-9c20-037e95585797</_AutoID>
+    <_UserName>mijunxi</_UserName>
+    <_OrgCode />
+    <_CreateTime>2013-07-07T22:39:38+08:00</_CreateTime>
+    <_UpdateTime>2013-07-08T09:01:28+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>f42ac5a2-90a5-45e8-975b-524f452e3733</RelationID>
+    <RelationName>岗位产品授权</RelationName>
+    <RelationTree>3</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>WebLimitWebList.aspx?PositionID={PositionID}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>b329fcb9-dec5-4060-90b1-488adba0ab7c</_AutoID>
+    <_UserName>mijunxi</_UserName>
+    <_OrgCode />
+    <_CreateTime>2013-07-07T22:39:50+08:00</_CreateTime>
+    <_UpdateTime>2013-07-08T09:01:37+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>24f22f6b-4461-48f5-90be-876b32ae958f</RelationID>
+    <RelationName>部门产品授权</RelationName>
+    <RelationTree>2</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>WebLimitWebList.aspx?DeptID={DeptID}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>e59819b6-90f7-442c-b013-f5766b202bec</_AutoID>
+    <_UserName>mijunxi</_UserName>
+    <_OrgCode />
+    <_CreateTime>2013-07-07T22:45:42+08:00</_CreateTime>
+    <_UpdateTime>2013-07-08T09:01:47+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>39af7845-0305-4ac1-80c5-adb974277118</RelationID>
+    <RelationName>人员流程授权</RelationName>
+    <RelationTree>4</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>WorkFlowLimitWorkFlowList.aspx?personid={personId}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>6860a2f9-d44e-4820-a517-3e84098f3008</_AutoID>
+    <_UserName>mijunxi</_UserName>
+    <_OrgCode />
+    <_CreateTime>2013-07-07T22:46:12+08:00</_CreateTime>
+    <_UpdateTime>2013-07-08T09:01:58+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>0d616a5d-b1bf-4d11-887f-04cc6321a204</RelationID>
+    <RelationName>角色流程授权</RelationName>
+    <RelationTree>6</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>WorkFlowLimitWorkFlowList.aspx?RoleID={RoleID}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>811f0ad6-9645-4d80-88ea-3ed7e4a97a76</_AutoID>
+    <_UserName>mijunxi</_UserName>
+    <_OrgCode />
+    <_CreateTime>2013-07-07T22:46:29+08:00</_CreateTime>
+    <_UpdateTime>2013-07-08T09:02:10+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>8c414246-2743-48a5-a850-2d9a3bdc0abb</RelationID>
+    <RelationName>岗位流程授权</RelationName>
+    <RelationTree>3</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>WorkFlowLimitWorkFlowList.aspx?PositionID={PositionID}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+  <Table>
+    <_AutoID>dd1ee35b-3488-4282-a898-1aba3dc37ad4</_AutoID>
+    <_UserName>mijunxi</_UserName>
+    <_OrgCode />
+    <_CreateTime>2013-07-07T22:46:43+08:00</_CreateTime>
+    <_UpdateTime>2013-07-08T09:02:18+08:00</_UpdateTime>
+    <_IsDel>0</_IsDel>
+    <RelationID>3e7e28ac-11b2-44d6-80ef-ea8f6fdae32c</RelationID>
+    <RelationName>部门流程授权</RelationName>
+    <RelationTree>2</RelationTree>
+    <RelationUIType>1</RelationUIType>
+    <RelationUIWidth>30%,*</RelationUIWidth>
+    <AppUrl1>WorkFlowLimitWorkFlowList.aspx?DeptID={DeptID}</AppUrl1>
+    <AppUrl2 />
+    <LevelUrl />
+    <LevelUrl1 />
+    <LevelUrl2 />
+    <LevelUrl3 />
+    <LevelUrl4 />
+    <MainUrl />
+  </Table>
+</NewDataSet>

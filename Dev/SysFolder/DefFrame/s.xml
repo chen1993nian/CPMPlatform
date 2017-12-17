@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+	<TreeNode Title="录入显示风格" TreeNo="0">
+		<TreeNode Title="单行文本框" TreeNo="00">
+			<TreeNode Title="自动编号" TreeNo="000" ForType="1,3" OpenUrl="AutoNumber.aspx" />
+			<TreeNode Title="日期时间样式" TreeNo="001">
+				<TreeNode Title="日期" TreeNo="0010" ForType="4" >
+					<TreeNode Title="格式1-2004-8-1" TreeNo="00100"></TreeNode>
+					<TreeNode Title="格式2-2004-08-01" TreeNo="00101" ForType="4"></TreeNode>
+				</TreeNode>
+				<TreeNode Title="日期时间" TreeNo="0011" ForType="4">
+					<TreeNode Title="格式1-2004-8-1 hh:mm:ss" TreeNo="00110"></TreeNode>
+					<TreeNode Title="格式2-2004-08-01 hh:mm:ss" TreeNo="00111" ForType="4"></TreeNode>
+				</TreeNode>
+					<TreeNode Title="年" TreeNo="0012">
+						<TreeNode Title="格式1-2004" TreeNo="00120"></TreeNode>
+						<TreeNode Title="格式2-04" TreeNo="00121"></TreeNode>
+						<TreeNode Title="格式3-2004年" TreeNo="00122"></TreeNode>
+						<TreeNode Title="格式4-04年" TreeNo="00123" ForType="1"></TreeNode>
+					</TreeNode>
+					<TreeNode Title="月" TreeNo="0013">
+						<TreeNode Title="格式1-08" TreeNo="00130"></TreeNode>
+						<TreeNode Title="格式2-8" TreeNo="00131"></TreeNode>
+						<TreeNode Title="格式3-08月" TreeNo="00132"></TreeNode>
+						<TreeNode Title="格式4-8月" TreeNo="00133" ForType="1"></TreeNode>
+					</TreeNode>
+					<TreeNode Title="日" TreeNo="0014">
+						<TreeNode Title="格式1-02" TreeNo="00140"></TreeNode>
+						<TreeNode Title="格式2-2" TreeNo="00141"></TreeNode>
+						<TreeNode Title="格式3-02日" TreeNo="00142"></TreeNode>
+						<TreeNode Title="格式4-2日" TreeNo="00143" ForType="1"></TreeNode>
+					</TreeNode>
+					<TreeNode Title="年月" TreeNo="0015">
+						<TreeNode Title="格式1-2004-8" TreeNo="00150">
+							<TreeNode></TreeNode>
+						</TreeNode>
+						<TreeNode Title="格式2-2004/8" TreeNo="00151"></TreeNode>
+						<TreeNode Title="格式3-2004.8" TreeNo="00152"></TreeNode>
+						<TreeNode Title="格式4-2004年8月" TreeNo="00153"></TreeNode>
+						<TreeNode Title="格式5-04-8" TreeNo="00154"></TreeNode>
+						<TreeNode Title="格式6-04/8" TreeNo="00155"></TreeNode>
+						<TreeNode Title="格式7-04.8" TreeNo="00156"></TreeNode>
+						<TreeNode Title="格式8-04年8月" TreeNo="00157" ForType="1"></TreeNode>
+					</TreeNode>
+					<TreeNode Title="4位年月日" TreeNo="0016">
+						<TreeNode Title="格式1-2004-8-8" TreeNo="00160"></TreeNode>
+						<TreeNode Title="格式2-2004/8/8" TreeNo="00161"></TreeNode>
+						<TreeNode Title="格式3-2004.8.8" TreeNo="00162"></TreeNode>
+						<TreeNode Title="格式4-2004年8月8日" TreeNo="00163"></TreeNode>
+						<TreeNode Title="格式5-2004-08-08" TreeNo="00164"></TreeNode>
+						<TreeNode Title="格式6-2004/08/08" TreeNo="00165"></TreeNode>
+						<TreeNode Title="格式7-2004.08.08" TreeNo="00166"></TreeNode>
+						<TreeNode Title="格式8-2004年08月08日" TreeNo="00167" ForType="1"></TreeNode>
+					</TreeNode>
+					<TreeNode Title="2位年月日" TreeNo="0017">
+						<TreeNode Title="格式1-04-8-8" TreeNo="00170"></TreeNode>
+						<TreeNode Title="格式2-04/8/8" TreeNo="00171"></TreeNode>
+						<TreeNode Title="格式3-04.8.8" TreeNo="00172"></TreeNode>
+						<TreeNode Title="格式4-04年8月8日" TreeNo="00173"></TreeNode>
+						<TreeNode Title="格式5-04-08-08" TreeNo="00174"></TreeNode>
+						<TreeNode Title="格式6-04/08/08" TreeNo="00175"></TreeNode>
+						<TreeNode Title="格式7-04.08.08" TreeNo="00176"></TreeNode>
+						<TreeNode Title="格式8-04年08月08日" TreeNo="00177" ForType="1"></TreeNode>
+					</TreeNode>
+					<TreeNode Title="4位年月日时分秒" TreeNo="0018">
+						<TreeNode Title="格式1-2004-8-8 hh:mm:ss" TreeNo="00180"></TreeNode>
+						<TreeNode Title="格式2-2004/8/8 hh:mm:ss" TreeNo="00181"></TreeNode>
+						<TreeNode Title="格式3-2004.8.8 hh:mm:ss" TreeNo="00182"></TreeNode>
+						<TreeNode Title="格式5-2004-08-08 hh:mm:ss" TreeNo="00183"></TreeNode>
+						<TreeNode Title="格式6-2004/08/08 hh:mm:ss" TreeNo="00184"></TreeNode>
+						<TreeNode Title="格式7-2004.08.08 hh:mm:ss" TreeNo="00185"></TreeNode>
+						<TreeNode Title="格式4-2004年8月8日 hh时mm分ss秒" TreeNo="00186"></TreeNode>
+						<TreeNode Title="格式8-2004年08月08日 hh时mm分ss秒" TreeNo="00187" ForType="1,3"></TreeNode>
+					</TreeNode>
+					<TreeNode Title="2位年月日时分秒" TreeNo="0019">
+						<TreeNode Title="格式1-04-8-8 hh:mm:ss" TreeNo="00190"></TreeNode>
+						<TreeNode Title="格式2-04/8/8 hh:mm:ss" TreeNo="00191"></TreeNode>
+						<TreeNode Title="格式3-04.8.8 hh:mm:ss" TreeNo="00192"></TreeNode>
+						<TreeNode Title="格式5-04-08-08 hh:mm:ss" TreeNo="00193"></TreeNode>
+						<TreeNode Title="格式6-04/08/08 hh:mm:ss" TreeNo="00194"></TreeNode>
+						<TreeNode Title="格式7-04.08.08 hh:mm:ss" TreeNo="00195"></TreeNode>
+						<TreeNode Title="格式4-04年8月8日 hh时mm分ss秒" TreeNo="00196"></TreeNode>
+						<TreeNode Title="格式8-04年08月08日 hh时mm分ss秒" TreeNo="00197" ForType="1"></TreeNode>
+					</TreeNode>
+			</TreeNode>
+			<TreeNode Title="密码显示" TreeNo="002" ForType="1"></TreeNode>
+			<TreeNode Title="计算：自定义公式" TreeNo="003" ForType="2,3" OpenUrl="SingleInput.aspx?titleName=计算公式"></TreeNode>
+		</TreeNode>
+		<TreeNode Title="下拉列表框" TreeNo="01">
+			<TreeNode Title="单选" TreeNo="010">
+				<TreeNode Title="日期相关" TreeNo="0100">
+					<TreeNode Title="年下拉" TreeNo="01000" ForType="1,3" OpenUrl="DateDropDown.aspx?type=年"></TreeNode>
+					<TreeNode Title="月下拉" TreeNo="01001" ForType="1,3" OpenUrl="DateDropDown.aspx?type=月"></TreeNode>
+					<TreeNode Title="日下拉" TreeNo="01002" ForType="1,3" OpenUrl="DateDropDown.aspx?type=日"></TreeNode>
+					<TreeNode Title="小时下拉" TreeNo="01003" ForType="1,3" OpenUrl="DateDropDown.aspx?type=小时"></TreeNode>
+					<TreeNode Title="分钟下拉" TreeNo="01004" ForType="1,3" OpenUrl="DateDropDown.aspx?type=分钟"></TreeNode>
+					<TreeNode Title="秒下拉" TreeNo="01005" ForType="1,3" OpenUrl="DateDropDown.aspx?type=秒"></TreeNode>
+				</TreeNode>
+				<TreeNode Title="关联表" TreeNo="0101" OpenUrl="LinkTbl.aspx"></TreeNode>
+				<TreeNode Title="字典库" TreeNo="0102" OpenUrl="Dictionary.aspx"></TreeNode>
+				<TreeNode Title="用户自定义值" TreeNo="0103" ForType="1,2,4" OpenUrl="SingleInput.aspx?titleName=用户自定义值（用逗号隔开）"></TreeNode>
+				<TreeNode Title="用户自定义SQL语句" TreeNo="0104" ForType="1,2,4" OpenUrl="SingleInput.aspx?titleName=用户自定义SQL语句"></TreeNode>
+			</TreeNode>
+			<TreeNode Title="多选" TreeNo="011">
+				<TreeNode Title="日期相关" TreeNo="0110">
+					<TreeNode Title="年下拉" TreeNo="01100" ForType="1,3" OpenUrl="DateDropDown.aspx?type=年"></TreeNode>
+					<TreeNode Title="月下拉" TreeNo="01101" ForType="1,3" OpenUrl="DateDropDown.aspx?type=月"></TreeNode>
+					<TreeNode Title="日下拉" TreeNo="01102" ForType="1,3" OpenUrl="DateDropDown.aspx?type=日"></TreeNode>
+					<TreeNode Title="小时下拉" TreeNo="011003" ForType="1,3" OpenUrl="DateDropDown.aspx?type=小时"></TreeNode>
+					<TreeNode Title="分钟下拉" TreeNo="01104" ForType="1,3" OpenUrl="DateDropDown.aspx?type=分钟"></TreeNode>
+					<TreeNode Title="秒下拉" TreeNo="01105" ForType="1,3" OpenUrl="DateDropDown.aspx?type=秒"></TreeNode>
+				</TreeNode>
+				<TreeNode Title="关联表" TreeNo="0111" OpenUrl="LinkTbl.aspx"></TreeNode>
+				<TreeNode Title="字典库" TreeNo="0112" OpenUrl="Dictionary.aspx"></TreeNode>
+				<TreeNode Title="用户自定义值" TreeNo="0113" ForType="1,2,4" OpenUrl="SingleInput.aspx?titleName=用户自定义值（用逗号隔开）"></TreeNode>
+				<TreeNode Title="用户自定义SQL语句" TreeNo="0114" ForType="1,2,4" OpenUrl="SingleInput.aspx?titleName=用户自定义SQL语句"></TreeNode>
+			</TreeNode>
+		</TreeNode>
+		<TreeNode Title="多行文本框" TreeNo="02">
+			<TreeNode Title="普通多行文本框" TreeNo="020" ForType="1,7" OpenUrl="SingleInput.aspx?titleName=设定多行文本框的行数"></TreeNode>
+			<TreeNode Title="带HTML编辑器的多行文本框" TreeNo="021" ForType="1,7" OpenUrl="SingleInput.aspx?titleName=设定多行文本框的行数"></TreeNode>
+		</TreeNode>
+		<TreeNode Title="弹出页面显示" TreeNo="03" ForType="1,2,3,4,">
+			<TreeNode Title="用户自定义页面" TreeNo="030" OpenUrl="SingleInput.aspx?titleName=用户自定义页面路径"></TreeNode>
+			<TreeNode Title="弹出列表页面并回写" TreeNo="031" OpenUrl="Input_OutList.aspx"></TreeNode>
+			<TreeNode Title="弹出带查询条件的页面并回写" TreeNo="032" OpenUrl="Input_Outlistandquery.aspx"></TreeNode>
+			<TreeNode Title="弹出用户树形页面" TreeNo="033" OpenUrl="Input_Outseluser.aspx"></TreeNode>
+			<TreeNode Title="弹出其他树形页面" TreeNo="034" OpenUrl="Input_OutOtherTree.aspx"></TreeNode>
+			<TreeNode Title="弹出树型字典并回写" TreeNo="035" OpenUrl="AppDictList.aspx?caller=styleset"></TreeNode>
+
+		</TreeNode>
+		<TreeNode Title="浏览文本框" TreeNo="04" ForType="5,6"></TreeNode>
+		<TreeNode Title="Radio显示" TreeNo="05">
+			<TreeNode Title="数据来源于字典库" TreeNo="050" ForType="1,2,3,4" OpenUrl="Dictionary.aspx"></TreeNode>
+			<TreeNode Title="数据来源于用户自定义值" TreeNo="051" ForType="1,2,3,4" OpenUrl="SingleInput.aspx?titleName=用户自定义值（用逗号隔开）"></TreeNode>
+			<TreeNode Title="数据来源于应用表" TreeNo="052" ForType="1,2,3,4" OpenUrl="LinkTbl.aspx"></TreeNode>
+			<TreeNode Title="数据来源于用户自定义SQL语句" TreeNo="053" ForType="1,2,3,4" OpenUrl="SingleInput.aspx?titleName=用户自定义SQL语句"></TreeNode>
+		</TreeNode>
+		<TreeNode Title="CheckBox显示" TreeNo="06">
+			<TreeNode Title="数据来源于字典库" TreeNo="060" ForType="1,2,3,4" OpenUrl="Dictionary.aspx"></TreeNode>
+			<TreeNode Title="数据来源于用户自定义值" TreeNo="061" ForType="1,2,3,4" OpenUrl="SingleInput.aspx?titleName=用户自定义值（用逗号隔开）"></TreeNode>
+			<TreeNode Title="数据来源于应用表" TreeNo="062" ForType="1,2,3,4" OpenUrl="LinkTbl.aspx"></TreeNode>
+			<TreeNode Title="数据来源于用户自定义SQL语句" TreeNo="063" ForType="1,2,3,4" OpenUrl="SingleInput.aspx?titleName=用户自定义SQL语句"></TreeNode>
+		</TreeNode>
+		<TreeNode Title="默认样式" TreeNo="07"></TreeNode>
+    <TreeNode Title="文档显示" TreeNo="08">
+    <TreeNode Title="weboffice显示" TreeNo="080" ></TreeNode>
+    </TreeNode>
+	</TreeNode>
+	<TreeNode Title="查询显示风格" TreeNo="1">
+		<TreeNode Title="金额大写" TreeNo="10" ForType="2,3"></TreeNode>
+		<TreeNode Title="带货币符号的金额" TreeNo="11" ForType="2,3"></TreeNode>
+		<TreeNode Title="日期时间" TreeNo="12" ForType="4">
+			<TreeNode Title="只显示年" TreeNo="120">
+				<TreeNode Title="格式1-2004" TreeNo="1200" ForType="4"></TreeNode>
+				<TreeNode Title="格式2-2004年" TreeNo="1201" ForType="4"></TreeNode>
+				<TreeNode Title="格式3-04" TreeNo="1202" ForType="4"></TreeNode>
+				<TreeNode Title="格式4-04年" TreeNo="1203" ForType="4"></TreeNode>
+			</TreeNode>
+			<TreeNode Title="只显示月" TreeNo="121">
+				<TreeNode Title="格式1-8月" TreeNo="1210" ForType="4"></TreeNode>
+				<TreeNode Title="格式2-8" TreeNo="1211" ForType="4"></TreeNode>
+				<TreeNode Title="格式3-08" TreeNo="1212" ForType="4"></TreeNode>
+				<TreeNode Title="格式4-08月" TreeNo="1213" ForType="4"></TreeNode>
+			</TreeNode>
+			<TreeNode Title="只显示日" TreeNo="122">
+				<TreeNode Title="格式1-8" TreeNo="1220" ForType="4"></TreeNode>
+				<TreeNode Title="格式2-8日" TreeNo="1221" ForType="4"></TreeNode>
+				<TreeNode Title="格式3-08" TreeNo="1222" ForType="4"></TreeNode>
+				<TreeNode Title="格式4-08日" TreeNo="1223" ForType="4"></TreeNode>
+			</TreeNode>
+			<TreeNode Title="只显示年月" TreeNo="123">
+				<TreeNode Title="格式1-2004-8" TreeNo="1230" ForType="4"></TreeNode>
+				<TreeNode Title="格式2-2004/8" TreeNo="1231" ForType="4"></TreeNode>
+				<TreeNode Title="格式3-2004.8" TreeNo="1232" ForType="4"></TreeNode>
+				<TreeNode Title="格式4-2004年8月" TreeNo="1233" ForType="4"></TreeNode>
+				<TreeNode Title="格式5-2004-08" TreeNo="1234" ForType="4"></TreeNode>
+				<TreeNode Title="格式6-2004/08" TreeNo="1235" ForType="4"></TreeNode>
+				<TreeNode Title="格式7-2004.08" TreeNo="1236" ForType="4"></TreeNode>
+				<TreeNode Title="格式8-2004年08月" TreeNo="1237" ForType="4"></TreeNode>
+			</TreeNode>
+			<TreeNode Title="显示4位年月日" TreeNo="124">
+				<TreeNode Title="格式1-2004-8-8" TreeNo="1240" ForType="4"></TreeNode>
+				<TreeNode Title="格式2-2004/8/8" TreeNo="1241" ForType="4"></TreeNode>
+				<TreeNode Title="格式3-2004.8.8" TreeNo="1242" ForType="4"></TreeNode>
+				<TreeNode Title="格式4-2004年8月8日" TreeNo="1243" ForType="4"></TreeNode>
+				<TreeNode Title="格式5-2004-08-08" TreeNo="1244" ForType="4"></TreeNode>
+				<TreeNode Title="格式6-2004/08/08" TreeNo="1245" ForType="4"></TreeNode>
+				<TreeNode Title="格式7-2004.08.08" TreeNo="1246" ForType="4"></TreeNode>
+				<TreeNode Title="格式8-2004年08月08日" TreeNo="1247" ForType="4"></TreeNode>
+			</TreeNode>
+			<TreeNode Title="显示2位年月日" TreeNo="125">
+				<TreeNode Title="格式1-04-8-8" TreeNo="1250" ForType="4"></TreeNode>
+				<TreeNode Title="格式2-04/8/8" TreeNo="1251" ForType="4"></TreeNode>
+				<TreeNode Title="格式3-04.8.8" TreeNo="1252" ForType="4"></TreeNode>
+				<TreeNode Title="格式4-04年8月8日" TreeNo="1253" ForType="4"></TreeNode>
+				<TreeNode Title="格式5-04-08-08" TreeNo="1254" ForType="4"></TreeNode>
+				<TreeNode Title="格式6-04/08/08" TreeNo="1255" ForType="4"></TreeNode>
+				<TreeNode Title="格式7-04.08.08" TreeNo="1256" ForType="4"></TreeNode>
+				<TreeNode Title="格式8-04年08月08日" TreeNo="1257" ForType="4"></TreeNode>
+			</TreeNode>
+			<TreeNode Title="显示4位年月日时分秒" TreeNo="126">
+				<TreeNode Title="格式1-2004-8-8 hh:mm:ss" TreeNo="1260" ForType="4"></TreeNode>
+				<TreeNode Title="格式2-2004/8/8 hh:mm:ss" TreeNo="1261" ForType="4"></TreeNode>
+				<TreeNode Title="格式3-2004.8.8 hh:mm:ss" TreeNo="1262" ForType="4"></TreeNode>
+				<TreeNode Title="格式4-2004年8月8日 hh时mm分ss秒" TreeNo="1263" ForType="4"></TreeNode>
+				<TreeNode Title="格式5-2004-08-08 hh:mm:ss" TreeNo="1264" ForType="4"></TreeNode>
+				<TreeNode Title="格式6-2004/08/08 hh:mm:ss" TreeNo="1265" ForType="4"></TreeNode>
+				<TreeNode Title="格式7-2004.08.08 hh:mm:ss" TreeNo="1266" ForType="4"></TreeNode>
+				<TreeNode Title="格式8-2004年08月08日 hh时mm分ss秒" TreeNo="1267" ForType="4"></TreeNode>
+			</TreeNode>
+			<TreeNode Title="2位年月日时分秒" TreeNo="127">
+				<TreeNode Title="格式1-04-8-8 hh:mm:ss" TreeNo="1270" ForType="4"></TreeNode>
+				<TreeNode Title="格式2-04/8/8 hh:mm:ss" TreeNo="1271" ForType="4"></TreeNode>
+				<TreeNode Title="格式3-04.8.8 hh:mm:ss" TreeNo="1272" ForType="4"></TreeNode>
+				<TreeNode Title="格式4-04年8月8日 hh时mm分ss秒" TreeNo="1273" ForType="4"></TreeNode>
+				<TreeNode Title="格式5-04-08-08 hh:mm:ss" TreeNo="1274" ForType="4"></TreeNode>
+				<TreeNode Title="格式6-04/08/08 hh:mm:ss" TreeNo="1275" ForType="4"></TreeNode>
+				<TreeNode Title="格式7-04.08.08 hh:mm:ss" TreeNo="1276" ForType="4"></TreeNode>
+				<TreeNode Title="格式8-04年08月08日 hh时mm分ss秒" TreeNo="1277" ForType="4"></TreeNode>
+			</TreeNode>
+		</TreeNode>
+		<TreeNode Title="英文字符转大写" TreeNo="13" ForType="1,8"></TreeNode>
+		<TreeNode Title="英文字符转小写" TreeNo="14" ForType="1,8"></TreeNode>
+	</TreeNode>
+</Root>

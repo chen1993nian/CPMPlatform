@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<queryobjs>
+    <queryobj queryid="flow_admin_query">
+        <!-- 管理员-流程查询 -->
+        <querysql sortdir="_createtime desc">
+            <![CDATA[select * from (select i._AutoId instanceId ,i.instanceName,i.deptName,i.CompanyName,instanceState,i.EmployeeName,i._CreateTime,i.AppName,d.WorkflowCode
+            ,i.FinishTime,dbo.WF_GetActiveNodeName(i._AutoId) ActiveNode,dbo.WF_GetActiveNodeEmployee(i._AutoID) ActiveEmployee,d.workflowName,DATEDIFF(d,i._createTime,getdate()) Days
+             from t_e_wf_instance i inner join t_e_wf_define d on i.workflowId=d._autoid) t  where |^condition^| |^sortdir^|
+             ]]>
+        </querysql>
+        <querylist>
+            <row id="[instanceId]">
+                <EmployeeName>{EmployeeName}</EmployeeName>
+                <_CreateTime>{_createtime:yyyy-MM-dd HH:mm}</_CreateTime>
+              <deptName>{deptName}</deptName>
+                <workflowname>{workflowName}</workflowname>
+                <companyname>{CompanyName}</companyname>
+                <InstanceName>{instanceName}</InstanceName>
+                <Days>{Days}</Days>
+                <InstanceId>{InstanceId}</InstanceId>
+              <FinishTime>{FinishTime:yyyy-MM-dd HH:mm}</FinishTime>
+                <InstanceState>{InstanceState}</InstanceState>
+                <ActiveNode>{ActiveNode}</ActiveNode>
+                <ActiveEmployee>{ActiveEmployee}</ActiveEmployee>
+                <AppName>{AppName}</AppName>
+                <WorkflowCode>{WorkflowCode}</WorkflowCode>
+            </row>
+        </querylist>
+    </queryobj>
+ </queryobjs>

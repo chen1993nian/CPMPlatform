@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>业务复制</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link type="text/css" rel="stylesheet" href="../../Css/appInput.css" />
+    <script type="text/javascript" src="../../js/jquery-1.7.min.js"></script>
+    <style type="text/css">
+        body{background:white url(../../img/common/body_bg.gif) repeat-x;padding-top:20px ;}
+        .normaltbl>tbody>tr>td{text-align:center;}
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="infoZone" style="width:660px;" class="center">
+        <div class="tip" >
+            操作提示：请把字段信息粘贴（Ctrl+V）在下面的区域，然后点击【确定】。
+        </div>
+        <textarea id="fieldArea" style="width:100%" rows="20"></textarea>
+
+    </div>
+    <br />
+    <input type="button" id="btnOK" class="btn01" value="  确 定  " />
+    <input type="button" id="btnClose" class="btn01" value="  关 闭  " />
+    </form>
+</body>
+</html>
+<script type="text/javascript">
+    $(function () {
+        $("#btnClose").click(function () {
+            frameElement.lhgDG.cancel();
+        });
+        $("#btnOK").click(function () {
+
+            if ($("#fieldArea").val() == "") {
+                alert("粘贴内容不能为空");
+                $("#fieldArea").focus();
+                return false;
+            }
+            else {
+                var fieldList = $("#fieldArea").val();
+                frameElement.lhgDG.curWin.pasteList(fieldList);
+                frameElement.lhgDG.cancel();
+            }
+        });
+    });
+</script>

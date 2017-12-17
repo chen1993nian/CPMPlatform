@@ -1,0 +1,48 @@
+[00:40:58]|Error|发生错误 ExecuteNonQuery:insert into T_E_Sys_LogSecurity(LogType,LogUser,UserName,ModuleCode,ModuleName,AppID,AppName,ComputeIP,ServerIP,Message,Browser,Platform,UserAgent) values (@LogType,@LogUser,@UserName,@ModuleCode,@ModuleName,@AppID,@AppName,@ComputeIP,@ServerIP,@Message,@Browser,@Platform,@UserAgent),不能将值 NULL 插入列 'LogId'，表 'FreeDB.dbo.T_E_Sys_LogSecurity'；列不允许有 Null 值。INSERT 失败。
+语句已终止。,参数列表：@LogType=登录失败,@LogUser=100001,@UserName=,@ModuleCode=,@ModuleName=,@AppID=,@AppName=,@ComputeIP=127.0.0.1,@ServerIP=::1,@Message=密码不正确,@Browser=Chrome59,@Platform=Windows 7,@UserAgent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.104 Safari/537.36, 
+[00:41:17]|Error|发生错误 ExecuteNonQuery:insert into T_E_Sys_LogException(LogType,LogUser,UserName,ModuleCode,ModuleName,AppID,AppName,ComputeIP,ServerIP,Message,Browser,Platform,UserAgent) values (@LogType,@LogUser,@UserName,@ModuleCode,@ModuleName,@AppID,@AppName,@ComputeIP,@ServerIP,@Message,@Browser,@Platform,@UserAgent),不能将值 NULL 插入列 'LogId'，表 'FreeDB.dbo.T_E_Sys_LogException'；列不允许有 Null 值。INSERT 失败。
+语句已终止。,参数列表：@LogType=错误,@LogUser=,@UserName=,@ModuleCode=,@ModuleName=,@AppID=,@AppName=,@ComputeIP=127.0.0.1,@ServerIP=::1,@Message=不能将值 NULL 插入列 'LogId'，表 'FreeDB.dbo.T_E_Sys_LogSecurity'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+   在 EIS.DataAccess.SysDatabase.ExecuteNonQuery(DbCommand command)
+   在 EIS.AppBase._DataLog.WriteSecurityLog(DataLog model)
+   在 EIS.AppBase.PageBase.WriteSecurityLog(String logType, String logMsg, String logUser)
+   在 EIS.Web.Default.LoginCheck(String string_0, String string_1) 位置 e:\CEIM开源协同办公系统20171209\PM\Default.aspx.cs:行号 170
+   在 EIS.Web.Default.Button1_Click(Object sender, EventArgs e) 位置 e:\CEIM开源协同办公系统20171209\PM\Default.aspx.cs:行号 54
+   在 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   在 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint),@Browser=Chrome59,@Platform=Windows 7,@UserAgent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.104 Safari/537.36, 
+[00:42:42]|Error|发生错误 ExecuteNonQuery:insert into T_E_Sys_LogSecurity(LogType,LogUser,UserName,ModuleCode,ModuleName,AppID,AppName,ComputeIP,ServerIP,Message,Browser,Platform,UserAgent) values (@LogType,@LogUser,@UserName,@ModuleCode,@ModuleName,@AppID,@AppName,@ComputeIP,@ServerIP,@Message,@Browser,@Platform,@UserAgent),不能将值 NULL 插入列 'LogId'，表 'FreeDB.dbo.T_E_Sys_LogSecurity'；列不允许有 Null 值。INSERT 失败。
+语句已终止。,参数列表：@LogType=登录失败,@LogUser=100001,@UserName=,@ModuleCode=,@ModuleName=,@AppID=,@AppName=,@ComputeIP=127.0.0.1,@ServerIP=::1,@Message=密码不正确,@Browser=Chrome59,@Platform=Windows 7,@UserAgent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.104 Safari/537.36, 
+[00:42:45]|Error|发生错误 ExecuteNonQuery:insert into T_E_Sys_LogException(LogType,LogUser,UserName,ModuleCode,ModuleName,AppID,AppName,ComputeIP,ServerIP,Message,Browser,Platform,UserAgent) values (@LogType,@LogUser,@UserName,@ModuleCode,@ModuleName,@AppID,@AppName,@ComputeIP,@ServerIP,@Message,@Browser,@Platform,@UserAgent),不能将值 NULL 插入列 'LogId'，表 'FreeDB.dbo.T_E_Sys_LogException'；列不允许有 Null 值。INSERT 失败。
+语句已终止。,参数列表：@LogType=错误,@LogUser=,@UserName=,@ModuleCode=,@ModuleName=,@AppID=,@AppName=,@ComputeIP=127.0.0.1,@ServerIP=::1,@Message=不能将值 NULL 插入列 'LogId'，表 'FreeDB.dbo.T_E_Sys_LogSecurity'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+   在 EIS.DataAccess.SysDatabase.ExecuteNonQuery(DbCommand command)
+   在 EIS.AppBase._DataLog.WriteSecurityLog(DataLog model)
+   在 EIS.AppBase.PageBase.WriteSecurityLog(String logType, String logMsg, String logUser)
+   在 EIS.Web.Default.LoginCheck(String string_0, String string_1) 位置 e:\CEIM开源协同办公系统20171209\PM\Default.aspx.cs:行号 170
+   在 EIS.Web.Default.Button1_Click(Object sender, EventArgs e) 位置 e:\CEIM开源协同办公系统20171209\PM\Default.aspx.cs:行号 54
+   在 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   在 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint),@Browser=Chrome59,@Platform=Windows 7,@UserAgent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.104 Safari/537.36, 
+[00:42:55]|Error|发生错误 ExecuteNonQuery:insert into T_E_Sys_LogSecurity(LogType,LogUser,UserName,ModuleCode,ModuleName,AppID,AppName,ComputeIP,ServerIP,Message,Browser,Platform,UserAgent) values (@LogType,@LogUser,@UserName,@ModuleCode,@ModuleName,@AppID,@AppName,@ComputeIP,@ServerIP,@Message,@Browser,@Platform,@UserAgent),不能将值 NULL 插入列 'LogId'，表 'FreeDB.dbo.T_E_Sys_LogSecurity'；列不允许有 Null 值。INSERT 失败。
+语句已终止。,参数列表：@LogType=登录成功,@LogUser=100001,@UserName=刘备,@ModuleCode=,@ModuleName=,@AppID=,@AppName=,@ComputeIP=127.0.0.1,@ServerIP=::1,@Message=登录成功,@Browser=Chrome59,@Platform=Windows 7,@UserAgent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.104 Safari/537.36, 
+[00:43:10]|Error|发生错误 ExecuteNonQuery:insert into T_E_Sys_LogException(LogType,LogUser,UserName,ModuleCode,ModuleName,AppID,AppName,ComputeIP,ServerIP,Message,Browser,Platform,UserAgent) values (@LogType,@LogUser,@UserName,@ModuleCode,@ModuleName,@AppID,@AppName,@ComputeIP,@ServerIP,@Message,@Browser,@Platform,@UserAgent),不能将值 NULL 插入列 'LogId'，表 'FreeDB.dbo.T_E_Sys_LogException'；列不允许有 Null 值。INSERT 失败。
+语句已终止。,参数列表：@LogType=错误,@LogUser=0125e12c-3e8a-4de2-90ea-165451863a2d,@UserName=刘备,@ModuleCode=,@ModuleName=,@AppID=,@AppName=,@ComputeIP=127.0.0.1,@ServerIP=::1,@Message=不能将值 NULL 插入列 'LogId'，表 'FreeDB.dbo.T_E_Sys_LogSecurity'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+   在 EIS.DataAccess.SysDatabase.ExecuteNonQuery(DbCommand command)
+   在 EIS.AppBase._DataLog.WriteSecurityLog(DataLog model)
+   在 EIS.AppBase.PageBase.WriteSecurityLog(String logType, String logMsg, String logUser)
+   在 EIS.Web.Default.LoginCheck(String string_0, String string_1) 位置 e:\CEIM开源协同办公系统20171209\PM\Default.aspx.cs:行号 177
+   在 EIS.Web.Default.Button1_Click(Object sender, EventArgs e) 位置 e:\CEIM开源协同办公系统20171209\PM\Default.aspx.cs:行号 54
+   在 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   在 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint),@Browser=Chrome59,@Platform=Windows 7,@UserAgent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.104 Safari/537.36, 

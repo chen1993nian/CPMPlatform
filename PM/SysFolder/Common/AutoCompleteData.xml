@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--业务列表[autocomplete使用]-->
+<root>
+	<queryobj queryid="tablelist">
+		<querysql sortdir="tablename">
+			<![CDATA[select _AutoID tableid,tablename,tablenamecn,parentname,tablecat,pagereccount,tabletype,createdate from T_E_Sys_TableInfo where  |^condition^| |^sortdir^|]]>
+		</querysql>
+		<suggestions>
+			<![CDATA['{tablename}【{tablenamecn}】']]>
+		</suggestions>
+		<data>
+			<![CDATA[{tablename:'{tablename}',tableid:'{tableid}'}]]>
+		</data>
+	</queryobj>
+	<queryobj queryid="tablefields">
+		<querysql sortdir="fieldodr">
+			<![CDATA[select _AutoID fieldid,fieldname,fieldnamecn from T_E_Sys_FieldInfo where  |^condition^| |^sortdir^|]]>
+		</querysql>
+		<suggestions>
+			<![CDATA['{fieldname}-{fieldnamecn}']]>
+		</suggestions>
+		<data>
+			<![CDATA[{fieldname:'{fieldname}',fieldid:'{fieldid}'}]]>
+		</data>
+	</queryobj>
+</root>

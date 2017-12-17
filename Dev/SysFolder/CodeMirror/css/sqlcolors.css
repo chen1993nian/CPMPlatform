@@ -1,0 +1,66 @@
+html {
+ 	scrollbar-shadow-color: #ffffff; 
+	scrollbar-highlight-color: #ffffff; 
+	scrollbar-face-color: #d9d9d9; 
+	scrollbar-3dlight-color: #d9d9d9; 
+	scrollbar-darkshadow-color: #d9d9d9; 
+	scrollbar-track-color: #ffffff; 
+	scrollbar-arrow-color: #ffffff 
+}
+body
+{
+cursor: text;
+}
+.editbox {
+  margin: .4em;
+  padding: 0;
+  font-family: monospace;
+  font-size: 10pt;
+  color: black;
+}
+
+.editbox p {
+  margin: 0;
+}
+
+span.sql-keyword {
+  color: blue;
+}
+
+span.sql-var {
+  color: red;
+}
+
+span.sql-comment {
+  color: #AA7700;
+}
+
+span.sql-literal {
+  color: green;
+}
+
+span.sql-operator {
+  color: blue;
+}
+
+span.sql-word {
+  color: black;
+}
+
+span.sql-function {
+  color: darkorange;
+}
+
+span.sql-type {
+  color: purple;
+}
+
+span.sql-separator {
+  color: #666666;
+}
+
+span.sql-number {
+  color: darkcyan;
+}
+
+
