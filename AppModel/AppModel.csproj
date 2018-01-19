@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE08C17A-D4A2-4C6C-8EE6-9DC3D5456B2D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EIS.AppModel</RootNamespace>
+    <AssemblyName>EIS.AppModel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class0.cs" />
+    <Compile Include="EIS.AppModel\AppFields.cs" />
+    <Compile Include="EIS.AppModel\DataControl.cs" />
+    <Compile Include="EIS.AppModel\ModelDefaults.cs" />
+    <Compile Include="EIS.AppModel\Workflow\ITaskAction.cs" />
+    <Compile Include="EIS.AppModel\Workflow\NoUserException.cs" />
+    <Compile Include="EIS.DataModel.Model\AppChart.cs" />
+    <Compile Include="EIS.DataModel.Model\AppConnection.cs" />
+    <Compile Include="EIS.DataModel.Model\AppFile.cs" />
+    <Compile Include="EIS.DataModel.Model\AppMsg.cs" />
+    <Compile Include="EIS.DataModel.Model\AppMsgRec.cs" />
+    <Compile Include="EIS.DataModel.Model\AppSms.cs" />
+    <Compile Include="EIS.DataModel.Model\AppTree.cs" />
+    <Compile Include="EIS.DataModel.Model\AppWorkDay.cs" />
+    <Compile Include="EIS.DataModel.Model\Catalog.cs" />
+    <Compile Include="EIS.DataModel.Model\Dict.cs" />
+    <Compile Include="EIS.DataModel.Model\DictEntry.cs" />
+    <Compile Include="EIS.DataModel.Model\EmployeeRelation.cs" />
+    <Compile Include="EIS.DataModel.Model\FieldEvent.cs" />
+    <Compile Include="EIS.DataModel.Model\FieldInfo.cs" />
+    <Compile Include="EIS.DataModel.Model\FieldInfoExt.cs" />
+    <Compile Include="EIS.DataModel.Model\FieldStyle.cs" />
+    <Compile Include="EIS.DataModel.Model\FolderInfo.cs" />
+    <Compile Include="EIS.DataModel.Model\TableDoc.cs" />
+    <Compile Include="EIS.DataModel.Model\TableInfo.cs" />
+    <Compile Include="EIS.DataModel.Model\TableScript.cs" />
+    <Compile Include="EIS.DataModel.Model\TableStyle.cs" />
+    <Compile Include="EIS.Permission.Model\Department.cs" />
+    <Compile Include="EIS.Permission.Model\DeptEmployee.cs" />
+    <Compile Include="EIS.Permission.Model\DeptLimit.cs" />
+    <Compile Include="EIS.Permission.Model\DeptType.cs" />
+    <Compile Include="EIS.Permission.Model\Employee.cs" />
+    <Compile Include="EIS.Permission.Model\EmployeeLimit.cs" />
+    <Compile Include="EIS.Permission.Model\FunNode.cs" />
+    <Compile Include="EIS.Permission.Model\LoginUser.cs" />
+    <Compile Include="EIS.Permission.Model\LoginUserType.cs" />
+    <Compile Include="EIS.Permission.Model\Position.cs" />
+    <Compile Include="EIS.Permission.Model\PositionProp.cs" />
+    <Compile Include="EIS.Permission.Model\Role.cs" />
+    <Compile Include="EIS.Permission.Model\RoleCatalog.cs" />
+    <Compile Include="EIS.Permission.Model\RoleEmployee.cs" />
+    <Compile Include="EIS.Permission.Model\RoleLimit.cs" />
+    <Compile Include="EIS.Permission.Model\RoleTemplate.cs" />
+    <Compile Include="EIS.Permission.Model\RoleTemplateLimit.cs" />
+    <Compile Include="EIS.Permission.Model\WebCataLog.cs" />
+    <Compile Include="EIS.WorkFlow.Model\Catalog.cs" />
+    <Compile Include="EIS.WorkFlow.Model\DealAction.cs" />
+    <Compile Include="EIS.WorkFlow.Model\Define.cs" />
+    <Compile Include="EIS.WorkFlow.Model\FinishTransition.cs" />
+    <Compile Include="EIS.WorkFlow.Model\IdeaTemplate.cs" />
+    <Compile Include="EIS.WorkFlow.Model\Instance.cs" />
+    <Compile Include="EIS.WorkFlow.Model\InstanceRefer.cs" />
+    <Compile Include="EIS.WorkFlow.Model\InstanceState.cs" />
+    <Compile Include="EIS.WorkFlow.Model\Task.cs" />
+    <Compile Include="EIS.WorkFlow.Model\TaskState.cs" />
+    <Compile Include="EIS.WorkFlow.Model\TaskType.cs" />
+    <Compile Include="EIS.WorkFlow.Model\UserTask.cs" />
+    <Compile Include="EIS.WorkFlow.Model\UserTaskReadState.cs" />
+    <Compile Include="EIS.WorkFlow.Model\UserTaskState.cs" />
+    <Compile Include="EIS.WorkFlow.Model\WorkflowLog.cs" />
+    <Compile Include="EIS.WorkFlow.XPDL.Utility\EmptyNode.cs" />
+    <Compile Include="EIS.WorkFlow.XPDL.Utility\Node.cs" />
+    <Compile Include="EIS.WorkFlow.XPDL.Utility\NodeFactory.cs" />
+    <Compile Include="EIS.WorkFlow.XPDL.Utility\NonEmptyNode.cs" />
+    <Compile Include="EIS.WorkFlow.XPDL.Utility\Pair.cs" />
+    <Compile Include="EIS.WorkFlow.XPDL.Utility\PDDesc.cs" />
+    <Compile Include="EIS.WorkFlow.XPDL.Utility\PDException.cs" />
+    <Compile Include="EIS.WorkFlow.XPDL.Utility\PDObjectNotFound.cs" />
+    <Compile Include="EIS.WorkFlow.XPDL.Utility\PDObjectNotSpecified.cs" />
+    <Compile Include="EIS.WorkFlow.XPDL.Utility\PDObjectNotSupport.cs" />
+    <Compile Include="EIS.WorkFlow.XPDL.Utility\PDObjectReadOnly.cs" />
+    <Compile Include="EIS.WorkFlow.XPDL.Utility\PD_UID.cs" />
+    <Compile Include="EIS.WorkFlow.XPDL.Utility\SystemFunction.cs" />
+    <Compile Include="EIS.WorkFlow.XPDL.Utility\Task_UID.cs" />
+    <Compile Include="EIS.WorkFlow.XPDL.Utility\UIDGenerator.cs" />
+    <Compile Include="EIS.WorkFlow.XPDL.Utility\XmlTagFilter.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Activities.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Activity.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\ActivitySet.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\ActivitySets.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\ActivityType.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\ActualParameters.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\AlertBack.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\AlertIn.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\AlertOut.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Application.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Applications.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\ArrayType.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Automatic.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\BaseElement.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\BaseElementWithIdName.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\BasicType.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\BasicTypeType.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\BizLogic.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\BizLogics.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\BlockActivity.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Condition.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\ConditionType.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\ConformanceClass.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\ConformanceClassGraphConformance.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\DataField.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\DataFieldIsArray.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\DataFields.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\DataType.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Deadline.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\DeadlineExecution.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\DeclaredType.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\EnumerationType.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\EnumerationValue.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\ExtendedAttribute.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\ExtendedAttributes.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\ExternalPackage.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\ExternalPackages.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\ExternalReference.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\FinishMode.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\FormalParameter.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\FormalParameterMode.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\FormalParameters.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Implementation.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\InstanceEventScript.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\InstanceEventScripts.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Join.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\JoinType.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\ListType.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Manual.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Member.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\No.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\ObjectNotFound.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Package.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\PackageHeader.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Participant.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Participants.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\ParticipantType.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\ParticipantTypeType.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Performer.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Performers.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\ProcessHeader.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\ProcessHeaderDurationUnit.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\RecordType.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\RedefinableHeader.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\RedefinableHeaderPublicationStatus.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Responsibles.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Route.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\SchemaType.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Script.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\SimulationInformation.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\SimulationInformationInstantiation.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Split.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\SplitType.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\StartMode.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\SubFlow.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\SubFlowExecution.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\TimeEstimation.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Tool.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\ToolType.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Transition.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\TransitionRef.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\TransitionRefs.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\TransitionRestriction.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\TransitionRestrictions.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Transitions.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\TypeDeclaration.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\TypeDeclarations.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\UnionType.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\WorkflowProcess.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\WorkflowProcessAccessLevel.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\WorkflowProcesses.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\XpdlException.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\Elements\Xpression.cs" />
+    <Compile Include="EIS.WorkFlow.XPDLParser\XpdlModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppBase\AppBase.csproj">
+      <Project>{1b4406f2-5e3f-46b0-8637-b98ec97721c5}</Project>
+      <Name>AppBase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

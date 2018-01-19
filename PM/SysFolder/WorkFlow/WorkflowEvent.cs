@@ -1,4 +1,5 @@
 ﻿using EIS.AppBase;
+using EIS.DataModel.Model;
 using EIS.Permission.Model;
 using EIS.WorkFlow.Model;
 using EIS.WorkFlow.XPDLParser.Elements;
@@ -6,7 +7,9 @@ using NLog;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Linq;
+using System.Net.Mail;
 using System.Web;
 
 namespace EIS.Web.SysFolder.WorkFlow
@@ -80,5 +83,28 @@ namespace EIS.Web.SysFolder.WorkFlow
         {
 
         }
+
+        /// <summary>
+        /// 发送邮件
+        /// </summary>
+        /// <param name="mail"></param>
+        public void SendMail(MailMessage mail)
+        {
+
+        }
+
+        /// <summary>
+        /// 发短信
+        /// </summary>
+        /// <param name="appSm"></param>
+        /// <param name="dbTran"></param>
+        public void SendSms(AppSms appSm, DbTransaction dbTran)
+        {
+
+        }
+
+
+
+
     }
 }

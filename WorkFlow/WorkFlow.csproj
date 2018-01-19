@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EDFD3790-C430-4509-AEA0-4E06351CCA0C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EIS.WorkFlow</RootNamespace>
+    <AssemblyName>EIS.WorkFlow</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\dll\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EIS.WorkFlow.Access\_Catalog.cs" />
+    <Compile Include="EIS.WorkFlow.Access\_Define.cs" />
+    <Compile Include="EIS.WorkFlow.Access\_FinishTransition.cs" />
+    <Compile Include="EIS.WorkFlow.Access\_IdeaTemplate.cs" />
+    <Compile Include="EIS.WorkFlow.Access\_Instance.cs" />
+    <Compile Include="EIS.WorkFlow.Access\_InstanceRefer.cs" />
+    <Compile Include="EIS.WorkFlow.Access\_Task.cs" />
+    <Compile Include="EIS.WorkFlow.Access\_UserTask.cs" />
+    <Compile Include="EIS.WorkFlow.Access\_WorkflowLog.cs" />
+    <Compile Include="EIS.WorkFlow.Engine\DriverEngine.cs" />
+    <Compile Include="EIS.WorkFlow.Engine\TaskPerformer2.cs" />
+    <Compile Include="EIS.WorkFlow.Engine\Utility.cs" />
+    <Compile Include="EIS.WorkFlow.Engine\WFCalendar.cs" />
+    <Compile Include="EIS.WorkFlow.Engine\WFListener.cs" />
+    <Compile Include="EIS.WorkFlow.Engine\WFSession.cs" />
+    <Compile Include="EIS.WorkFlow.Service\CatalogService.cs" />
+    <Compile Include="EIS.WorkFlow.Service\DefineService.cs" />
+    <Compile Include="EIS.WorkFlow.Service\FinishTransitionService.cs" />
+    <Compile Include="EIS.WorkFlow.Service\IdeaTemplateService.cs" />
+    <Compile Include="EIS.WorkFlow.Service\InstanceReferService.cs" />
+    <Compile Include="EIS.WorkFlow.Service\InstanceService.cs" />
+    <Compile Include="EIS.WorkFlow.Service\TaskService.cs" />
+    <Compile Include="EIS.WorkFlow.Service\UserTaskService.cs" />
+    <Compile Include="EIS.WorkFlow.Test\TestEngine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppBase\AppBase.csproj">
+      <Project>{1b4406f2-5e3f-46b0-8637-b98ec97721c5}</Project>
+      <Name>AppBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AppDAC\AppDAC.csproj">
+      <Project>{69748dea-4722-4a77-9621-27d8b7e499f9}</Project>
+      <Name>AppDAC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AppModel\AppModel.csproj">
+      <Project>{ee08c17a-d4a2-4c6c-8ee6-9dc3d5456b2d}</Project>
+      <Name>AppModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{a60d3811-e630-4dbc-add5-138b6da12ba8}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{10cbc630-8b98-4ef3-981d-8f5b1737823d}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Permission\Permission.csproj">
+      <Project>{96a7fa23-400f-4cf9-9084-b8c33cc93fb7}</Project>
+      <Name>Permission</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

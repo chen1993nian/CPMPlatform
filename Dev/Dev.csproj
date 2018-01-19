@@ -52,10 +52,6 @@
     <Reference Include="Aspose.Cells">
       <HintPath>D:\bin\Aspose.Cells.dll</HintPath>
     </Reference>
-    <Reference Include="EIS.AppBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\EIS.AppBase.dll</HintPath>
-    </Reference>
     <Reference Include="EIS.AppDAC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\EIS.AppDAC.dll</HintPath>
@@ -72,17 +68,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\EIS.AppModel.dll</HintPath>
     </Reference>
-    <Reference Include="EIS.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\EIS.Common.dll</HintPath>
-    </Reference>
     <Reference Include="EIS.DataAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\EIS.DataAccess.dll</HintPath>
-    </Reference>
-    <Reference Include="EIS.Permission, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\EIS.Permission.dll</HintPath>
     </Reference>
     <Reference Include="EIS.WebBase.JZY, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -5043,6 +5031,20 @@
     <Folder Include="SysFolder\tiny_mce\plugins\spellchecker\classes\utils\" />
     <Folder Include="SysFolder\tiny_mce\plugins\spellchecker\includes\" />
     <Folder Include="Theme\1\css\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppBase\AppBase.csproj">
+      <Project>{1b4406f2-5e3f-46b0-8637-b98ec97721c5}</Project>
+      <Name>AppBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{a60d3811-e630-4dbc-add5-138b6da12ba8}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Permission\Permission.csproj">
+      <Project>{96a7fa23-400f-4cf9-9084-b8c33cc93fb7}</Project>
+      <Name>Permission</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
