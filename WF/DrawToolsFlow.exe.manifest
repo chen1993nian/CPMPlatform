@@ -1,0 +1,990 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="DrawToolsFlow.exe" version="1.0.0.56" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="DrawToolsFlow" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="DrawToolsFlow.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC 清单选项
+            如果要更改 Windows 用户帐户控制级别，请用以下节点之一替换 
+            requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            指定 requestedExecutionLevel 节点将会禁用文件和注册表虚拟化。
+            如果要利用文件和注册表虚拟化实现向后 
+            兼容性，则删除 requestedExecutionLevel 节点。
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AjaxPro.2.dll" size="147456">
+      <assemblyIdentity name="AjaxPro.2" version="9.2.17.1" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>8hGqgG2UeWJZ+yVCT+lV3uNbxq4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DrawToolsFlow.exe" size="774144">
+      <assemblyIdentity name="DrawToolsFlow" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>OmsQEJPGjKgNS0GtoMUtntNlwJ0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EIS.AppBase.dll" size="35328">
+      <assemblyIdentity name="EIS.AppBase" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>prgvPN8w2/SbV8YRgu5D1EU7mCI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EIS.AppModel.dll" size="153600">
+      <assemblyIdentity name="EIS.AppModel" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>77fjqZvt5N1NZ+9h7/8QPS8mL3o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ICSharpCode.TextEditor.dll" size="393216">
+      <assemblyIdentity name="ICSharpCode.TextEditor" version="3.1.0.4977" publicKeyToken="4D61825E8DD49F1A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>RnQR+R+0PMka0JSslLidTZZD53c=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Janus.Data.v3.dll" size="221184">
+      <assemblyIdentity name="Janus.Data.v3" version="3.5.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>WywikZoTmLV4LRsYjhzKKI0YpQ8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Janus.Windows.Common.v3.dll" size="208896">
+      <assemblyIdentity name="Janus.Windows.Common.v3" version="3.5.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>96fNPQFEdLGXGihCb5O3xw72Y5A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Janus.Windows.GridEX.v3.dll" size="1372160">
+      <assemblyIdentity name="Janus.Windows.GridEX.v3" version="3.5.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ZlEgBdJ5q8IExEnULqvH/bHtMrE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NLog.dll" size="365056">
+      <assemblyIdentity name="NLog" version="2.0.0.0" publicKeyToken="5120E14C03D0593C" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ZJDC9x/B5qaKQHxd0HGkXBUtCoo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeifenLuo.WinFormsUI.Docking.dll" size="446464">
+      <assemblyIdentity name="WeifenLuo.WinFormsUI.Docking" version="2.2.3369.24504" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>t1qtKB/0bCWibAx8AhX88X+BJf4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="DrawTools\icon\About.ico" size="5430">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+MqbFdwKMWhh0at1VhWt4fs6W8E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\add2.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>2GYeEjOiEVAqDyMMKANlvbiutl0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\Align-Left.ico" size="894">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5higlXUGIDRIy9xqbmi2pFE0jJg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\application.ico" size="4214">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>6WUSB6s8PbgWBuZC9ZOWmEWzAs8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\copy (3).ico" size="4214">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>zgmjK32WRtYN7DNGkKmPIiM/dkA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\cut.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>wP4VOgxADcUstPNsHrXrpjDhX5M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\database (4).ico" size="4214">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MMAuVxO/eKmeKfUmiF8WOkwWeEk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\database close.ico" size="1406">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Td11NWEB1KHaKmy5Gkg/nnLSgG8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\database open.ico" size="1406">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>r6Nah9D2tS1mz/NL2l7/tgIYfYI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\database_go16.png" size="1078">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>vOkr9V5KJ/bbXqZiFJfypnmNKoo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\database_link.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>uzKNvwPuceZ7mYJHWMVAXJ724mY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\database_save 16.png" size="861">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>wg2rAy8V5Tj5oxp/8SwsvB56x1U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\database_save16.png" size="861">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>wg2rAy8V5Tj5oxp/8SwsvB56x1U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\database_table.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>WFnr2I26umod6/9dYajfznYO3a0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\Database-Add.ico" size="894">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>GSKdECQhDBGAN8KtzM0d6UGoSkY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\Database-Open.ico" size="894">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>kv76kB5HnRPlFJxkjKsS67z6Owk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\delete (4).ico" size="4214">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3I86bKP7l21hwM4nTHGxwzy6/LM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\ErrorIcon.ico" size="2862">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+f3IXJrArK5zWv19GIjKyK4F2fI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\Fill-Left.ico" size="894">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>90VPkD6P/8P83Q9U1Rp7Ide75EI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\Flow Chart.ico" size="894">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ZO5WvI96Ka44HHVjslsR6tiRfg4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\AddGreen.jpg" size="4660">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Bxciixh4hul40XdZ46Z+pj5rtWM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\AddGreen.png" size="4336">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>n+xo/fWb7oYFu1eljMsh7LNfbuA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\box_down.jpg" size="988">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>GYrjwHzLa+YTapKLZHVi/yNnEbk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\box_down.png" size="438">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TinqKgtDnxzaHfI0FtVwPgi4vGo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\clock_select_remain.jpg" size="1447">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>V75h+yjndDXhP1TZ/0mcfbXkkRE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\clock_select_remain.png" size="2144">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>N3nr92GwY+MhEKGs35v+Q3sKgFE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\cog.jpg" size="1490">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>7GT4lCztmcChJ10sUST4DmWfHZ0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\cog.png" size="2104">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>EflyEKCWqLYUpGl4ZSZRf4yn5yQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\designfloat.jpg" size="968">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>L5VvW3giZtPtjVtcbTu4uByDMNo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\designfloat.png" size="448">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>97jdvFQwTUoJJ7g5/7evcvT0YAE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\group_add.jpg" size="1673">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>t8YC9Q1FrPQUvJXJLe05n21Oevg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\group_add.png" size="2386">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/d9Mr3crpHekuhdWRzw29YoKvUc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\mail.jpg" size="1373">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>kgcL4lQnq8sx/96Z/1D9DMs87yk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\mail.png" size="1031">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>uuuIjeg4bGgI+/0GI8agnSYp4xg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\MinusGreen.jpg" size="4649">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+3o646o2BjQOp1HoUslBKKHGKK4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\MinusGreen.png" size="4199">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>sUEMu/cqGvY3eG6n0sqQ9ehyZhc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\mouse_select.jpg" size="1243">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>qFknkK/q/N9G1mMEfi+XlKaQIAs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\mouse_select.png" size="843">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/Tl4hvXJWdDp/QYTUVhwbP1YY6Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\start.jpg" size="1444">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3/Nzll6mH7kaGGFSi+Oq/1ExRwM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\start.png" size="1177">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>PwPpoSiaJIlwFqc9WGAkGwzfo5A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\status_busy.jpg" size="988">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>GYrjwHzLa+YTapKLZHVi/yNnEbk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\status_busy.png" size="438">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TinqKgtDnxzaHfI0FtVwPgi4vGo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\status_online.jpg" size="968">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>L5VvW3giZtPtjVtcbTu4uByDMNo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\status_online.png" size="448">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>97jdvFQwTUoJJ7g5/7evcvT0YAE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\stop.jpg" size="1461">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>PJdimoPUTrdKlUgZzWKZgJG0p6M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\stop.png" size="1165">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>0t1KIK0xDibKMtmERQqJZ4oKuUw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\user32.jpg" size="4606">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>dnNDhCNg8qsu/xI2qWNXbr4jJUI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\flow\user32.png" size="4633">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ekywHpLpjjUEknrGO8DXA2SlQtc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\folders.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>6jVZmv6BppgUNGuXmMWO8TTR07I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\frmDraw.ico" size="5430">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YzJbjJ5eK8cNmur85kh95bD7gus=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\group.png" size="532">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>kjdVnFgNsinQ4WgFKpETtzFLPX0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\Insert-File.ico" size="894">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>DXz1JcO4bC5GIzq1HVN8B8BvCZ0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\label2.Image.png" size="1078">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+yjeardWbJU+tmxMEqZiHMp9I+8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\list.ico" size="4214">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>zBg2LKyfk1mJlvvQ8PsGsX5E5XM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\menuDel.Image.png" size="625">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>IE9yyYkO+1zYaZseVC6JFNfLqAQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\menuNewVer.Image.png" size="488">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>hoNnUk2dNRkjmNivd++NI/MvIgc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\menuProp.Image.png" size="552">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>WRg39QDMSHtBmxk6eOfWZvazZ0w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\org.gif" size="1028">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>x6kI04j4z2oGQpTADBXQ2eyLEAI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\org.ico" size="1334">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>lHIGZ29EuofGBsavOP+OnVSNdE0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\Permission.ico" size="894">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YjfbC5vJCXVdoYmXhLWltk8OKTs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\person.png" size="599">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Ns7QzomAHfr0Fa266cLRdbVCA6k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\redo (3).ico" size="4214">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8iG0RYuFjxNXq+dkmxn22wszJOo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\redo.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>LLvSQq0Jc0Y6+tWkhISARZhTBO4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\refresh (3).ico" size="4214">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>o6KhBMgP/x/rRo3yKRzaNuZE22g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\RightArrow.png" size="1654">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8Szn7eovaOflya6ZnSuBB6wnGKM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\save (3).ico" size="4214">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>cGqW2lQcTvixWZEdD1nHXvaGa1I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\setting_tools2.Image.png" size="877">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>daJ/le9ADzgQ95fj7cyBRpDbqR0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\status_busy.ico" size="1078">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4F6dxQ05JblkRQQy3Za52fJdeiE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\status_busy.png" size="1078">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4F6dxQ05JblkRQQy3Za52fJdeiE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\status_online.ico" size="1078">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>rowLUUJFZ1Vnek9nxmaLWrhVfr8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\status_online.png" size="1078">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>rowLUUJFZ1Vnek9nxmaLWrhVfr8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\suo.ico" size="5430">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/HNvDZDdyKj31WPe3VRguBcPsrA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\text_list_bullets.png" size="293">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>LKLxwuuWJTdvMNvqxcVjyg/zwxE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\toolCopy.Image.png" size="513">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>0DlVWbNGNUyhpRehQNuMvqqYm/k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\toolDelete.Image.png" size="590">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>2oZlVTfB4w9EkYIsW+QYFMaFxYw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\toolExport.Image.png" size="775">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>wDM7Shffg+1CtCBzPAyykXC2gpo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\toolNewVer.Image.png" size="362">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>g+eSHr3+ZxC9ywxntzOO8jxQQAI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\toolNewWF.Image.png" size="625">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>VfE28u5h/R8Ctcq2JPfOI4nzOZ4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\toolProp.Image.png" size="521">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4GaDFTCy0lqNzgYVCWo4RB9eDtI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\toolRefresh.Image.png" size="625">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TrblWjbR+ACFD8I9WyjaV6xtm1E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\Tools (2).ico" size="894">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>UfysAIWJ73V8R64FYHQ8A/zJC0o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\toolSave.ico" size="1990">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>HsXm23CsY59duXaLX6x7KKMnI2Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\toolShowAll.Image.png" size="617">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>U23kykC+v1mVLrU1N04hHW/ZKZo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\toolStripStatusLabel1.Image.png" size="746">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YcfidDQZDvGDyRr22OZBO5ArQTw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\toolWorkFlowProp.Image.ico" size="532">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>kjdVnFgNsinQ4WgFKpETtzFLPX0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\top.ico" size="4214">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>hvQJwzg3bRbtx7aCVuYDcot2eD4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\user.ico" size="1078">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+yjeardWbJU+tmxMEqZiHMp9I+8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\View-One Page.ico" size="894">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>lzr+FI1lbfnhj3parUxFcqHHpYs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawTools\icon\zoom.ico" size="4214">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>itqj0cssOjmsu+J1/80+MwHrLPo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DrawToolsFlow.exe.config" size="3480">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>IBUlQIc4sImNUwl/kQtPp8ohMG0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="流程工具安装不了解决方案.txt" size="75">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>w6cm9lCLLGY5KCkoZaboc+PkyWQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- 此应用程序设计使用的所有 Windows 版本的列表。Windows 将会自动选择最兼容的环境。-->
+      <!-- 如果应用程序设计使用 Windows 7，请取消注释以下 supportedOS 节点-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+</asmv1:assembly>
